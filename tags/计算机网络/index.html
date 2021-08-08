@@ -1066,6 +1066,10 @@
     
         <!-- 弹幕所需的css和js -->
         
+  <!-- 弹幕插件 -->
+  <link href="/js/danmu/barrager.css" rel="stylesheet">
+  <script src="/js/danmu/jquery.barrager.js"></script>
+
 <!-- 具体js，请前往valine/script.ejs查看 -->
 
         <script>
@@ -1080,11 +1084,11 @@
         path: window.location.pathname,
         notify: false,
         verify: false,
-        app_id: "",
-        app_key: "",
+        app_id: "fECsRwS6LgzrSnoESCaHljAy-gzGzoHsz",
+        app_key: "uIQ5fgxa7cQq5iAk86yiwDFg",
         placeholder: "客官，说点什么吧",
         avatar: "",
-        master: "",   //博主邮箱md5
+        master: "	2872c01cf4a1e1b8",   //博主邮箱md5
         tagMeta: ["博主","小伙伴","访客"],     //标识字段名
         friends: "",
         metaPlaceholder: { "nick": "昵称/QQ号", "mail": "邮箱" },
@@ -1104,7 +1108,7 @@
         }
       }
       //查询评论 valine.Q('*').limit(7) -- 查询所有，限制7条, 下面的的代码是查询当前页面
-      var themeDanmu = eval('false');
+      var themeDanmu = eval('true');
       var themeLoop = eval('false');
       var themeLooperTime = '5000' || 5000;
       var speed = '40' || 20;
@@ -1184,6 +1188,10 @@
   };
   $(document).ready(load_valine);
   document.addEventListener('pjax:send', function (e) {
+    
+      $('.danmuBox').length > 0 && $('.danmuBox').remove()
+      looperValine && clearInterval(looperValine);
+      $.fn.barrager.removeAll();
     
   })
   document.addEventListener('pjax:complete', function () {
