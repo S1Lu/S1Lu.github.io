@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>内部赛（3.20-3.21） | S1Lu‘s world</title>
+  <title>buuctf新手题 | S1Lu‘s world</title>
 
   
     
@@ -138,7 +138,7 @@
     <div class="drawer-box-head bg-color">
       <img class="drawer-box-head_logo" src="https://img14.360buyimg.com/ddimg/jfs/t1/184356/16/18040/674224/610d33c8E87820bac/b9a07540b8740f0c.png" alt="logo">
       <h3 class="drawer-box-head_title">S1Lu‘s world</h3>
-      <h5 class="drawer-box-head_desc"></h5>
+      <h5 class="drawer-box-head_desc">心若浮沉，淡笑安然。</h5>
     </div>
     
     <div class="drawer-box-content">
@@ -269,7 +269,7 @@
         
         
           <li class="drawer-box-content_item">
-            <a target="_blank" rel="noopener" href="https://github.com/S1Lu/S1Lu.github.io">
+            <a target="_blank" rel="noopener" href="https://github.com/yuang01/hexo-theme-bamboo">
               <i class="fa fa-github" aria-hidden="true"></i>
               <span>Github</span>
             </a>
@@ -465,7 +465,7 @@
     </nav>
   </div>
   
-    <a target="_blank" rel="noopener" href="https://github.com/S1Lu/S1Lu.github.io" class="github-corner color-primary" aria-label="View source on GitHub"><svg width="60" height="60" viewBox="0 0 250 250" style="fill:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <a target="_blank" rel="noopener" href="https://github.com/yuang01/hexo-theme-bamboo" class="github-corner color-primary" aria-label="View source on GitHub"><svg width="60" height="60" viewBox="0 0 250 250" style="fill:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
   
   
     <div id="he-plugin-simple"></div>
@@ -607,7 +607,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/15.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/9.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
@@ -615,36 +615,10 @@
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        内部赛（3.20-3.21）
+        buuctf新手题
       </span>
     </div>
     
-    
-      
-        <span class="post-detail-header_date">
-          <i class="fa fa-calendar"></i> 发表于：2021-05-02 |
-        </span>
-      
-
-      
-
-      
-        <div class="post-detail-header_wordcount">
-          <span class="totalcount">
-            <i class="fa fa-file-text-o"></i> 字数统计: 190 |
-          </span>
-  
-          <span class="min2read">
-            <i class="fa fa-clock-o"></i> 阅读时长: 1分钟 |
-          </span>
-  
-          
-            <span class="reading">
-              <i class="fa fa-eye"></i> 阅读量：<span id="busuanzi_value_page_pv"></span>
-            </span>
-          
-        </div>
-      
     
   </div>
   
@@ -660,33 +634,86 @@
     <article class="post post-detail">
       
       <div class="post-content">
-        <h2 id="Crypoto"><a href="#Crypoto" class="headerlink" title="Crypoto"></a>Crypoto</h2><h1 id="1）签到题"><a href="#1）签到题" class="headerlink" title="1）签到题"></a>1）签到题</h1><p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323182659416.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="古典密码"><br>这个提示已经的很明显了<code>**在图片的属性里边找到信息**</code>   </p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lrgm&#123;Yzdeen&#125;</span><br></pre></td></tr></table></figure>
-<p>题目上还说了古典密码，那就是凯撒或者栅栏<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323183147175.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="凯撒解密6"><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323183316260.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="凯撒加密20"></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;Stxyyh&#125;</span><br></pre></td></tr></table></figure>
+        <p><strong>Crypto</strong><br><strong>1）篱笆墙的影子</strong><br>星星还是那颗星星哟 月亮还是那个月亮 山也还是那座山哟 梁也还是那道梁 碾子是碾子 缸是缸哟 爹是爹来娘是娘 麻油灯呵还吱吱响 点的还是那么丁点亮 哦哦 注意：得到的 flag 请包上 flag{} 提交</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">felhaagv&#123;ewtehtehfilnakgw&#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="2）变形的猪圈密码"><a href="#2）变形的猪圈密码" class="headerlink" title="2）变形的猪圈密码"></a>2）变形的猪圈密码</h1><p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323183547852.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="变形的猪圈密码"><br>升级版的猪圈密码</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;IMKNIGHTSTEMPLAR&#125;</span><br></pre></td></tr></table></figure>
-<p><a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/3938367567">更多的猪圈密码</a></p>
-<h1 id="3）栅栏-base-rot"><a href="#3）栅栏-base-rot" class="headerlink" title="3）栅栏+base+rot"></a>3）栅栏+base+rot</h1><p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323184427962.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="rot"><br>首先给出的是栅栏 （6只小猪是提示），然后在base ，最后rot<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323184537912.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="ZnVuYXRrdm5ibGhuYW5hcXRobmF5aHlo"></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ZnVuYXRrdm5ibGhuYW5hcXRobmF5aHlo</span><br></pre></td></tr></table></figure>
+<p>  栅栏密码</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;wethinkwehavetheflag&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323184629812.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="funatkvnblhnanaqthnayhyh"></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">funatkvnblhnanaqthnayhyh</span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323184658546.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="shangxiaoyuanandguanlulu"></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;shangxiaoyuanandguanlulu&#125;</span><br></pre></td></tr></table></figure>
 
-<h1 id="4）rabbit-md5"><a href="#4）rabbit-md5" class="headerlink" title="4）rabbit+md5"></a>4）rabbit+md5</h1><p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323184803756.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="rabbit"><br>提示兔子 ，那就是rabbit，然后 md5<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323185123196.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="rabbit"></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">a7fcb22a88038f35a8f39d503e7f0062</span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323185143737.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="md5"></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;good-luck&#125;</span><br></pre></td></tr></table></figure>
+<p>解密 ：13<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210415204710624.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
+<p>加密 ：2</p>
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/2021041520473320.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br><strong>2）Rabbit</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">U2FsdGVkX1/+ydnDPowGbjjJXhZxm2MP2AgI</span><br></pre></td></tr></table></figure>
 
-<h2 id="Web"><a href="#Web" class="headerlink" title="Web"></a>Web</h2><h1 id="1-签到题"><a href="#1-签到题" class="headerlink" title="1)签到题"></a>1)签到题</h1><p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323185327568.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="签到题"><br>点进去一个网页，（考核过了）在网页源码中<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323185409207.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="一片空白"><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323185538308.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="果然是"></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">U0x7VGhpc19pNF9mbGFnIX0=</span><br></pre></td></tr></table></figure>
-<p>这个就是base64了<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323185638494.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="好家伙"></p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SL&#123;This_i4_flag!&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="MISC"><a href="#MISC" class="headerlink" title="MISC"></a>MISC</h2><h1 id="1）签到题-1"><a href="#1）签到题-1" class="headerlink" title="1）签到题"></a>1）签到题</h1><p>属性中直接有<img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323185741623.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="签到"><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323190010149.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="直接出"></p>
-<h1 id="2）字节中遇到你"><a href="#2）字节中遇到你" class="headerlink" title="2）字节中遇到你"></a>2）字节中遇到你</h1><p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323190101855.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="直接找"><br>在winhex里搜索文本<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/2021032319085524.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="错的"><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210323190910743.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="正确的"></p>
+<p>rabbit编码</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;Cute_Rabbit&#125;</span><br></pre></td></tr></table></figure>
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210415204834830.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
+<p><strong>3）Quoted-printable</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">=E9=82=A3=E4=BD=A0=E4=B9=9F=E5=BE=88=E6=A3=92=E5=93=A6</span><br></pre></td></tr></table></figure>
+
+
+
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;那你也很棒哦&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210415204957390.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
+<p><strong>4）变异凯撒</strong></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">加密密文：afZ_r9VYfScOeO_UL^RWUc</span><br></pre></td></tr></table></figure>
+
+
+<p>这里我们发现a, f, Z, _的ASCii码是 97， 102， 90， 95</p>
+<p>而再看这里flag{}的ASCii码是——–102，108，97，103；</p>
+<p>这时你会发现                                   5   ， 6   ，7 ，  8</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;Caesar_variation&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>5）password</strong></p>
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210415205612410.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210415205638581.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
+<p>就是弱口令了<br>就是姓和名的首字母和出生年月日</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;zs19900315&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>6）摩丝（摩斯）</strong></p>
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210415210306499.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.. .-.. --- ...- . -.-- --- ..-</span><br></pre></td></tr></table></figure>
+
+<p>交错的莫尔斯电码</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;iloveyou&#125;</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;ILOVEYOU&#125;</span><br></pre></td></tr></table></figure>
+
+<p>小写没过大写过了<br>因为摩斯电码在设计的时候就没有区分大小写，而且从码表中可以看到，都是大写，所以在网站上解密出来的自己转成大写<br><strong>7）看我回旋踢（凯撒）</strong></p>
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210415205934502.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">synt&#123;5pq1004q-86n5-46q8-o720-oro5on0417r1&#125;</span><br></pre></td></tr></table></figure>
+
+<p>拼不齐的flag  和{} 凯撒</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;5cd1004d-86a5-46d8-b720-beb5ba0417e1&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p><strong>8）一眼就解密</strong><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210415210055661.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ZmxhZ3tUSEVfRkxBR19PRl9USElTX1NUUklOR30=</span><br></pre></td></tr></table></figure>
+
+<p>有一个“=” 64base<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210415210024156.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif"></p>
+<p>flag{THE_FLAG_OF_THIS_STRING}</p>
+<p><strong>9）url编码</strong></p>
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210415210130744.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">%66%6c%61%67%7b%61%6e%64%20%31%3d%31%7d</span><br></pre></td></tr></table></figure>
+
+<p>直接url编码</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;and 1=1&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>10）md5</strong><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210415210214759.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">e00cf25ad42683b3df678c61f42c6bda</span><br></pre></td></tr></table></figure>
+
+
+<p>md5在线解码</p>
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210415210222198.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">admin1</span><br></pre></td></tr></table></figure>
+
+
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;admin1&#125;</span><br></pre></td></tr></table></figure>
+
+
 
       </div>
       <div class="post-tags-categories">
@@ -708,7 +735,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2021/05/02/3.20-3.21团队赛/" target="_blank" title="内部赛（3.20-3.21）">http://example.com/2021/05/02/3.20-3.21团队赛/</a>
+    <a href="/post/buuctf新手题/2021" target="_blank" title="buuctf新手题">http://example.com/post/buuctf新手题/2021</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -728,22 +755,39 @@
 
   
   <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/medias/9.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="/medias/10.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/05/02/buuctf%E6%96%B0%E6%89%8B%E9%A2%98/" class="post-nav-link">
+    <a href="/post/hello-world/2021" class="post-nav-link">
       <div class="title">
         <i class="fa fa-angle-left"></i> 上一篇:
-        <div class="title-text">buuctf新手题</div>
+        <div class="title-text">hello ，world！</div>
       </div>
       
       <!-- <div class="content">
-        Crypto1）篱笆墙的影子星星还是那颗星星哟 月亮还是那个月亮 山也还是那座山哟 梁也还是那道梁 碾子是碾子 缸是缸哟
+        Welcome to Hexo! This is your very first post. Check documen
       </div> -->
     </a>
   </div>
 
 
+
+  
+  <div class="post-nav-next post-nav-item">
+    <div class="post-nav-img lazyload" data-original="/medias/15.jpg" style="background-size: cover; 
+      background-position: center center;">
+    </div>
+    <a href="/post/3.20-3.21%E5%9B%A2%E9%98%9F%E8%B5%9B/2021" class="post-nav-link">
+      <div class="title">
+        下一篇: <i class="fa fa-angle-right"></i>
+        <div class="title-text">内部赛（3.20-3.21）</div>
+      </div>
+      <!-- <div class="content">
+        Crypoto1）签到题这个提示已经的很明显了**在图片的属性里边找到信息**   
+1lrgm&#123;Yzdeen
+      </div> -->
+    </a>
+  </div>
 
 </div>
 
