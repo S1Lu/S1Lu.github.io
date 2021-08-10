@@ -265,7 +265,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   }
 }
 .header-bg-color {
-  background: #42b983;
+  background: rgba(255,255,255,0);
 }
 .header {
   position: relative;
@@ -365,7 +365,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   opacity: 0;
 }
 .header .header-content .navbar .menu .menu-item .sub-menu li {
-  background: #42b983;
+  background: rgba(255,255,255,0);
   width: 140px;
   text-align: center;
   line-height: 45px;
@@ -1120,7 +1120,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   justify-content: center;
   align-items: center;
   color: #fff;
-  background: #42b983;
+  background: rgba(255,255,255,0);
 }
 .footer .footer-main {
   text-align: center;
