@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>远程交换机管理 实验二 | S1Lu‘s world</title>
+  <title>搭建一个Hexo+Github的博客 | S1Lu‘s world</title>
 
   
     
@@ -607,7 +607,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/1.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/7.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
@@ -615,7 +615,7 @@
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        远程交换机管理 实验二
+        搭建一个Hexo+Github的博客
       </span>
     </div>
     
@@ -631,11 +631,11 @@
       
         <div class="post-detail-header_wordcount">
           <span class="totalcount">
-            <i class="fa fa-file-text-o"></i> 字数统计: 851 |
+            <i class="fa fa-file-text-o"></i> 字数统计: 2.1k |
           </span>
   
           <span class="min2read">
-            <i class="fa fa-clock-o"></i> 阅读时长: 3分钟 |
+            <i class="fa fa-clock-o"></i> 阅读时长: 8分钟 |
           </span>
   
           
@@ -660,47 +660,101 @@
     <article class="post post-detail">
       
       <div class="post-content">
-        <h1 id="思科模拟器入门"><a href="#思科模拟器入门" class="headerlink" title="思科模拟器入门"></a>思科模拟器入门</h1><p>远程管理交换机  （实验二）</p>
-<h2 id="常用模式"><a href="#常用模式" class="headerlink" title="常用模式"></a>常用模式</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">用户模式               Switch&gt;</span><br><span class="line">特权模式               Switch#</span><br><span class="line">全局配置模式           Switch(config)#</span><br><span class="line">端口模式               Switch(config-if)#</span><br></pre></td></tr></table></figure>
-<h2 id="常用配置命令行"><a href="#常用配置命令行" class="headerlink" title="常用配置命令行"></a>常用配置命令行</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">## 模式切换指令</span></span><br><span class="line"></span><br><span class="line">enable   进入特权模式（一般简写为en）</span><br><span class="line">config t    进入全局配置模式</span><br><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">fa</span> 0/1    进入交换机某个端口视图模式</span></span><br><span class="line"><span class="class"><span class="title">exit</span>    返回到上级模式</span></span><br><span class="line"><span class="class"><span class="title">end</span>    从全局以下模式返回到特权模式 </span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">## 快捷指令</span></span><br><span class="line"><span class="class"></span></span><br><span class="line">帮助信息(如? 、co?、copy?)</span><br><span class="line">命令简写(如 en 的完整命令为 enable)</span><br><span class="line">命令自动补全(Tab)</span><br><span class="line">快捷键(ctrl+c中断测试,ctrl+z退回到特权视图)</span><br><span class="line">reload   重启(在特权模式下)</span><br><span class="line">hostname    X修改交换机名称(在全局配置模式下)</span><br><span class="line"></span><br><span class="line"><span class="comment">## 端口配置指令</span></span><br><span class="line"></span><br><span class="line">speed,duplex    配置交换机端口参数</span><br><span class="line">show version    查看交换机版本信息</span><br><span class="line">show running-config   查看当前生效的配置信息</span><br><span class="line">show startup-config    查看保存在NVRAM中的启动配置信息</span><br><span class="line">show <span class="class"><span class="keyword">interface</span>   查看端口信息</span></span><br><span class="line"><span class="class"><span class="title">show</span> <span class="title">mac</span>-<span class="title">address</span>-<span class="title">table</span>    查看交换机的<span class="title">MAC</span>地址</span></span><br><span class="line">选择某个端口Switch(config)# interface  type mod/port</span><br><span class="line"> (type：端口类型，通常有ethernet、Fastethernet、Gigabitethernet；</span><br><span class="line"> mod：端口所在的模块；</span><br><span class="line"> port：在该模块中的编号；）:<span class="keyword">Switch</span>(config)<span class="comment"># interface fa 0/1;</span></span><br><span class="line"> 选择多个端口<span class="keyword">Switch</span>(config)<span class="comment">#interface  type mod/startport-endport </span></span><br><span class="line">如：<span class="keyword">Switch</span>(config)<span class="comment"># interface interface fa 0/1-5  //选择端口 fa 0/1 ~ fa 0/5</span></span><br><span class="line"> <span class="keyword">Switch</span>(config-<span class="keyword">if</span>)<span class="comment">#speed [10/100/auto]    设置端口通信速度</span></span><br><span class="line"> <span class="keyword">Switch</span>(config-<span class="keyword">if</span>)<span class="comment">#duplex [half/full/auto]    设置端口单双工模式</span></span><br><span class="line">若交换机设置为auto以外的具体速度，此时应注意保证通信双方也要有相同的设置值。</span><br><span class="line">注意事项：在配置交换机时，要注意交换机端口的单双工模式的匹配，如果链路一端设置的是全双工，另一端是自动协商，则会造成响应差和高出错率，丢包现象会很严重。通常两端设置为相同的模式。</span><br><span class="line"></span><br><span class="line"><span class="comment">## 密码设置指令</span></span><br><span class="line">设置进入特权模式的密码</span><br><span class="line"> <span class="keyword">Switch</span>(config)<span class="comment"># enable password ****** </span></span><br><span class="line">通过console端口连接设备及Telnet远程登录时所需的密码；</span><br><span class="line"></span><br><span class="line">  <span class="keyword">Switch</span>(config)<span class="comment"># line console 0   表示配置控制台线路，0是控制台的线路编号。</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">Switch</span>(config-line)<span class="comment"># login  用于打开登录认证功能。</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">Switch</span>(config-line)<span class="comment"># password 5ijsj   设置进入控制台访问的密码</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        <h1 id="一：搭建前的环境准备"><a href="#一：搭建前的环境准备" class="headerlink" title="一：搭建前的环境准备"></a>一：搭建前的环境准备</h1><h2 id="（1）Node-js-的安装和准备"><a href="#（1）Node-js-的安装和准备" class="headerlink" title="（1）Node.js 的安装和准备"></a>（1）Node.js 的安装和准备</h2><p>在浏览器上<strong>搜索node</strong><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130135932142.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="node的官网"><br>点进去<strong>下载</strong><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130140015158.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="下载任意一个"><br><strong>按步骤安装</strong><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130140547217.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="![安装](https://img-blog.csdnimg.cn/20210130140104847.png"></p>
+<p><strong><a target="_blank" rel="noopener" href="https://blog.csdn.net/antma/article/details/86104068">详细安装过程</a></strong></p>
+<h2 id="（2）git的安装和准备"><a href="#（2）git的安装和准备" class="headerlink" title="（2）git的安装和准备"></a>（2）git的安装和准备</h2><p>浏览器搜索<strong>git</strong><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130140646320.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="搜索"><br>点进去后，点击如图：<img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130140712144.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="点击"><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130140758563.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="点击"><br>安装<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130140841914.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="安装"><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/yaojxing/article/details/72902973">Git详细安装</a></p>
+<h1 id="（3）gitHub账户的配置"><a href="#（3）gitHub账户的配置" class="headerlink" title="（3）gitHub账户的配置"></a>（3）gitHub账户的配置</h1><p>先注册GitHub账号：<a target="_blank" rel="noopener" href="https://github.com/">地址</a><br>登陆之后，点击页面右上角的加号，选择New repository：<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130141601182.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="这样"></p>
+<p>进入代码库创建页面：<br>在Repository name下填写 你的昵称.github.io，如图所示：<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130141700177.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="e"></p>
+<p><strong>注意：比如我的github名称是yuanwangmumu，这里你就填 yuanwangmumu.github.io。就是填成你的昵称.github.io这种格式</strong></p>
+<h1 id="二：环境配置及其相关问题解决"><a href="#二：环境配置及其相关问题解决" class="headerlink" title="二：环境配置及其相关问题解决"></a>二：环境配置及其相关问题解决</h1><p>桌面右键点开 git bash here<br>进入命令框</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
 
-<p>1）打开交换机<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/2021040100154718.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>#逐渐增加 启动中</p>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401001606520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
-<p>2）</p>
-<p>Switch 用户模式<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401001620989.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>3）<br>Switch# 特权模式</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enable</span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/2021040100173153.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>4）<br>Switch(config)# 进入全局配置模式</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">configure terminal</span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401001827303.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>5）<br>hostname switchA  配置交换机名字为“switchA”</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hostname switchA</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
 
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401001924172.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
-<p>6）<br>switchA(config-if) 进入交换机管理接口配置模式 </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">vlan</span> 1</span></span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401001957838.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>7）<br>  配置交换机管理接口IP地址</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip address 静态地址 网络掩码</span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002100429.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>8）<br>开启交换机管理接口</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">no shutdown</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git --version</span><br></pre></td></tr></table></figure>
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130142126915.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="这样的"><br>如果没出现如上的可以查看<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_51644623/article/details/113276833">解决方案</a><br>    <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_51644623/article/details/113270377">解决方案</a><br> 然后输入</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130142523248.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="hexo的下载"><br>出现<a href="mailto:&#43;&#x68;&#x65;&#x78;&#111;&#x2d;&#x63;&#x6c;&#x69;&#64;&#x34;&#x2e;&#50;&#x2e;&#48;">&#43;&#x68;&#x65;&#x78;&#111;&#x2d;&#x63;&#x6c;&#x69;&#64;&#x34;&#x2e;&#50;&#x2e;&#48;</a>代表成功了（注意有的版本会不一样）</p>
+<h1 id="三：将hexo与GitHub连接"><a href="#三：将hexo与GitHub连接" class="headerlink" title="三：将hexo与GitHub连接"></a>三：将hexo与GitHub连接</h1><p>配置git个人信息，生产新的ssh密钥</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;you@example.com&quot;</span><br></pre></td></tr></table></figure>
 
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002124159.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>9）<br>两种验证交换机管理IP地址已经配置，管理接口已经开启<br>一：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show ip <span class="class"><span class="keyword">interface</span></span></span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002234977.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>二：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show <span class="class"><span class="keyword">interface</span> <span class="title">vlan</span> 1</span></span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002308332.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>10）<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/2021040100233658.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002342544.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002352823.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>11）<br>配置交换机远程登录密码  1表示远程登录,0表示是以密文形式传输,并设置交换机远程登录密码为“star“</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enable secret level <span class="number">1</span> <span class="number">0</span> star</span><br></pre></td></tr></table></figure>
+<p>//注册github用的邮箱</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br></pre></td></tr></table></figure>
+<p> //github用户名</p>
+<p>打开Git Bash（桌面上鼠标右击 Git Bash here）输入</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh‐keygen ‐t rsa ‐C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
+<p>然后一直点回车，最后完成后会在用户主目录下（C:\Users\用户名）生成.ssh目录，里面有id_rsa.pub文件。id_rsa_pub是公钥，复制其内容然后登陆github，打开seetings ——&gt;SSH and GPG keys ，点击new SSH key，填上任意title，在key文本框里粘贴刚才复制的内容，点击Add SSH Key。<br>然后在任意盘新建<strong>一个  空的  文件夹</strong>，在此文件夹，右键git bash here<br>输入hexo init开始初始化</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130142832577.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="初始化"></p>
+<p>稍等一下，当出现start bloging with hexo代表初始化成功<br>然后安装依赖性文件，输入npm install</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/2021013014292994.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="下载"></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210415203153376.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
+<p>安装成功后<br> 安装部署插件，输入</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>本地的文件中有一个<code>_config.yml</code>打开在最后那里修改为</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: &#x27;git&#x27;</span><br><span class="line">  repository: git@github.com:yuanwangmumu/yuanwangmumu.github.io.git  ##这个填上Github中的仓库的ssh地址</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002441584.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>12）<br>配置交换机特权模式密码。 15表示特权模式, 0表示是以密文形式传输,并设置交换机特权模式密码为“admin” </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enable secret level <span class="number">15</span> <span class="number">0</span> admin</span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002534411.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
-<p>声明引用：<a target="_blank" rel="noopener" href="https://blog.csdn.net/gengkui9897/article/details/85109962">大佬</a><br><a target="_blank" rel="noopener" href="https://docs.qq.com/doc/DTW9aR1ZpcmtrUHdT">原文档</a></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+
+<p>然后输入</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>就会在本地给你开启locahost:4000的端口</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo 4000</span><br></pre></td></tr></table></figure>
+
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130143006946.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="4000"><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/buppt/article/details/78949315">如果打不开可能窗口被占，点击查看如何解决</a><br>打开后的样子<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130143250274.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
+<p>然后开始设置让这个本地端口让别人访问，用到github账号，在部署到远端访问前，要下载一个deployer的插件，<br>输入npm install hexo-deployer-git –save</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130143500712.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
+<p>到原来的新建文件夹里找到_config.yml文件<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130143645560.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130143653362.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130143714149.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>最后有个deploy，把type类型写成git，除了type，还要加上repo和branch，repo就是在GitHub上的网址，branch填主分支msater，注意这两个在填写时前边必须有空格，修改好后按ctrl+s保存<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130143742210.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>返回命令行</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br></pre></td></tr></table></figure>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+<p>输入hexo g -d开始推送到GitHub</p>
+<h1 id="四：博客主题更换"><a href="#四：博客主题更换" class="headerlink" title="四：博客主题更换"></a>四：博客主题更换</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/yaluoshan/article/details/80630653?ops_request_misc=%25257B%252522request%25255Fid%252522%25253A%252522161189561816780265410982%252522%25252C%252522scm%252522%25253A%25252220140713.130102334..%252522%25257D&request_id=161189561816780265410982&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-80630653.first_rank_v2_pc_rank_v29&utm_term=hexo%25E6%258D%25A2%25E4%25B8%25BB%25E9%25A2%2598">博客主题设置</a></p>
+<h1 id="五：电脑更换系统或更换电脑博客的重新部署"><a href="#五：电脑更换系统或更换电脑博客的重新部署" class="headerlink" title="五：电脑更换系统或更换电脑博客的重新部署"></a>五：电脑更换系统或更换电脑博客的重新部署</h1><p><strong>一：要拷贝下来的重要内容</strong><br>1 _config.yml:站点配置文件<br>2 theme:主题文件<br>3 source：这个肯定是要拷贝，里面有写的博客文件<br>下边的可以不用：<br>4 scaffolds：文章模板<br>5 package.json：说明使用哪些包<br>6 .gitignore：限定在提交的时候哪些文件可以忽略<br><strong>二：开始部署</strong><br>先下载“Git”，和“node.js”<br>在你拷贝的文件夹里新建一个文件夹，在文件夹里打开git bash here</p>
+<p>依次输入</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210130142523248.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="hexo的下载"><br>出现<a href="mailto:&#x2b;&#x68;&#101;&#120;&#x6f;&#x2d;&#99;&#x6c;&#x69;&#x40;&#x34;&#46;&#x32;&#46;&#x30;">&#x2b;&#x68;&#101;&#120;&#x6f;&#x2d;&#99;&#x6c;&#x69;&#x40;&#x34;&#46;&#x32;&#46;&#x30;</a>代表成功了（注意有的版本会不一样）</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure>
+<p><strong>然后将拷贝的文件让新生成的文件覆盖</strong><br>安装成功后<br> 安装部署插件，输入</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>配置git个人信息，生产新的ssh密钥</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.email &quot;you@example.com&quot;</span><br></pre></td></tr></table></figure>
+
+<p>//注册github用的邮箱</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;yourname&quot;</span><br></pre></td></tr></table></figure>
+<p> //github用户名</p>
+<p>打开Git Bash（桌面上鼠标右击 Git Bash here）输入</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh‐keygen ‐t rsa ‐C &quot;your_email@example.com&quot;</span><br></pre></td></tr></table></figure>
+<p>然后一直点回车，最后完成后会在用户主目录下（C:\Users\用户名）生成.ssh目录，里面有id_rsa.pub文件。id_rsa_pub是公钥，复制其内容然后登陆github，打开seetings ——&gt;SSH and GPG keys ，点击new SSH key，填上任意title，在key文本框里粘贴刚才复制的内容，点击Add SSH Key。</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
+<p>在输入</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+<p>查看是否成功。</p>
+<h1 id="六：目录设置及调整"><a href="#六：目录设置及调整" class="headerlink" title="六：目录设置及调整"></a>六：目录设置及调整</h1><p>修改next主题的ejs文件<br>我们首先要编辑文章显示页面的模板，也就是<code>themes/next/layout/_partial/article.ejs</code>文件。为了将目录生成在正文之前，我们首先在这个文件中找到<code>&lt;%- post.content %&gt;</code>，并在这一行之前加入如下代码：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- Table of Contents --&gt;</span></span><br><span class="line">&lt;% if (!index &amp;&amp; post.toc)&#123; %&gt;</span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;toc&quot;</span> <span class="attr">class</span>=<span class="string">&quot;toc-article&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">strong</span> <span class="attr">class</span>=<span class="string">&quot;toc-title&quot;</span>&gt;</span>文章目录<span class="tag">&lt;/<span class="name">strong</span>&gt;</span></span><br><span class="line">    &lt;%- toc(post.content) %&gt;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+<p>这段代码的含义清晰明了，if语句中有两个条件，!index是为了不在首页的文章摘要中生成目录，post.toc确保了只在显式地标记了<code>toc: true</code>的文章中生成目录。若这两个条件满足，则创建一个目录的<div>。</p>
+<p>修改完这个文件之后，找一篇包含了多个子标题的文章，并在文章开头的front-matter中添加一句toc: true，在浏览器中访问这篇文章，应该可以看到文章的开头处已经有了带链接的目录。但是这样的目录实在太难看，我们还需要添加相应的CSS来将其指定为我们想要的样式。<br>为目录编写CSS文件<br>要指定目录的样式，我们要修改的文件是<code>themes/next/source/css/_partial/article.styl</code>。在文件的最后，添加如下代码：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">/*toc*/</span><br><span class="line">.toc-article</span><br><span class="line">  background #eee</span><br><span class="line">  border 1px solid #bbb</span><br><span class="line">  border-radius 10px</span><br><span class="line">  margin 1.5em 0 0.3em 1.5em</span><br><span class="line">  padding 1.2em 1em 0 1em</span><br><span class="line">  max-width 28%</span><br><span class="line">.toc-title</span><br><span class="line">  font-size 120%</span><br><span class="line">#toc</span><br><span class="line">  line-height 1em</span><br><span class="line">  font-size 0.9em</span><br><span class="line">  float right</span><br><span class="line">  .toc</span><br><span class="line">    padding 0</span><br><span class="line">    margin 1em</span><br><span class="line">    line-height 1.8em</span><br><span class="line">    li</span><br><span class="line">      list-style-type none</span><br><span class="line">  .toc-child </span><br><span class="line">    margin-left 1em</span><br></pre></td></tr></table></figure>
+
+<p>第一段的toc-article指定了目录整个<div>的背景色、边框色、倒角半径、各种间距以及最大的宽度。注意这里最好指定目录的最大宽度，我将其设为了28%，也就是文章正文那个框的宽度的28%，也可以设为一个固定的长度，比如在笔记本电脑上16em就是个不错的宽度，但为了能适配各种不同尺寸的屏幕，最好还是设置为百分比。如果不指定最大宽度，遇到比较长的标题时，生成的目录会非常难看。这个最大宽度的设置是我在网上其他添加目录的方法中没有见到的。<br>第二段的toc-title指的就是“文章目录”那四个字，这四个字要比其他字大一些，将其字号设为其他字的120%。<br>第三段的#toc.toc指定了目录列表的一些细节，将font-size设为0.9em会让目录的字比文章的字稍小一些。最后的.toc-child指定了二级目录的缩进量。<br>再次生成页面，应该已经可以显示比较美观的目录了。<br><strong>六选自<a target="_blank" rel="noopener" href="http://kuangqi.me/tricks/enable-table-of-contents-on-hexo/#%E4%BF%AE%E6%94%B9Landscape%E4%B8%BB%E9%A2%98%E7%9A%84ejs%E6%96%87%E4%BB%B6">大佬链接</a></strong><br>经另一个大佬指导最后改成这个</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">/*toc*/</span><br><span class="line">.toc-article</span><br><span class="line">  background #eee</span><br><span class="line">  border 1px solid #bbb</span><br><span class="line">  border-radius 10px</span><br><span class="line">  margin 1.5em 0 0.3em 1.5em</span><br><span class="line">  padding 1.2em 1em 0 1em</span><br><span class="line">  max-width 28%</span><br><span class="line">.toc-title</span><br><span class="line">  font-size 120%</span><br><span class="line">#toc</span><br><span class="line">  line-height 1em</span><br><span class="line">  font-size 0.9em</span><br><span class="line">  position fixed</span><br><span class="line">  right 10px</span><br><span class="line">  .toc</span><br><span class="line">    padding 0</span><br><span class="line">    margin 1em</span><br><span class="line">    line-height 1.8em</span><br><span class="line">    li</span><br><span class="line">      list-style-type none</span><br><span class="line">  .toc-child </span><br><span class="line">    margin-left 1em</span><br></pre></td></tr></table></figure>
+<h1 id="七：这个博客的一些操作"><a href="#七：这个博客的一些操作" class="headerlink" title="七：这个博客的一些操作"></a>七：这个博客的一些操作</h1><p>1.用 markdown写文章时插入<span id="more"></span>,文章会自动从插入的位置截断，也就是说在博客中只显示<!--more-->之前的内容，点击阅读全文之后会显示所有内容。<br>2.标记toc: true的文章中生成目录<br>3.标记toc: true置顶</p>
 
       </div>
       <div class="post-tags-categories">
         
         <div class="tags">
           
-            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="">
-              计算机网络
+            <a href="/tags/%E5%BF%83%E8%8B%A5%E6%B5%AE%E6%B2%89%EF%BC%8C%E6%B7%A1%E7%AC%91%E5%AE%89%E7%84%B6%E3%80%82/" class="">
+              心若浮沉，淡笑安然。
             </a>
           
         </div>
@@ -714,7 +768,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/post/远程交换机管理 实验二/2021" target="_blank" title="远程交换机管理 实验二">http://example.com/post/远程交换机管理 实验二/2021</a>
+    <a href="/post/搭建一个Hexo+GitHub的博客/2021/" target="_blank" title="搭建一个Hexo+Github的博客">http://example.com/post/搭建一个Hexo+GitHub的博客/2021/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -732,24 +786,41 @@
 
 
 
-
-
   
-  <div class="post-nav-next post-nav-item">
+  <div class="post-nav-prev post-nav-item">
     <div class="post-nav-img lazyload" data-original="/medias/3.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/post/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C%E5%85%A5%E9%97%A8/2021" class="post-nav-link">
+    <a href="/post/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C%E5%85%A5%E9%97%A8/2021/" class="post-nav-link">
       <div class="title">
-        下一篇: <i class="fa fa-angle-right"></i>
+        <i class="fa fa-angle-left"></i> 上一篇:
         <div class="title-text">攻防世界 懵逼到此一游</div>
       </div>
+      
       <!-- <div class="content">
         入门001flag直接给出
 1flag&#123;th1s_!s_a_d4m0_4la9&#125;
 
 
 002.pdf
+      </div> -->
+    </a>
+  </div>
+
+
+
+  
+  <div class="post-nav-next post-nav-item">
+    <div class="post-nav-img lazyload" data-original="/medias/2.jpg" style="background-size: cover; 
+      background-position: center center;">
+    </div>
+    <a href="/post/Python%E8%AF%AD%E6%B3%95%201%EF%BC%89/2021/" class="post-nav-link">
+      <div class="title">
+        下一篇: <i class="fa fa-angle-right"></i>
+        <div class="title-text">python语法 1）</div>
+      </div>
+      <!-- <div class="content">
+        缩进：python中的缩进是用来只是代码块如果省略缩进则会报错，空格数取决于自己（在一个代码块中必须使用数目一样的空格）
       </div> -->
     </a>
   </div>
