@@ -735,7 +735,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/post/buuctf新手题/" target="_blank" title="buuctf新手题">http://example.com/post/buuctf新手题/</a>
+    <a href="/post/buuctf新手题/2021" target="_blank" title="buuctf新手题">http://example.com/post/buuctf新手题/2021</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -758,7 +758,7 @@
     <div class="post-nav-img lazyload" data-original="/medias/10.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/post/hello-world/" class="post-nav-link">
+    <a href="/post/hello-world/2021" class="post-nav-link">
       <div class="title">
         <i class="fa fa-angle-left"></i> 上一篇:
         <div class="title-text">hello ，world！</div>
@@ -777,7 +777,7 @@
     <div class="post-nav-img lazyload" data-original="/medias/15.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/post/3.20-3.21%E5%9B%A2%E9%98%9F%E8%B5%9B/" class="post-nav-link">
+    <a href="/post/3.20-3.21%E5%9B%A2%E9%98%9F%E8%B5%9B/2021" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fa fa-angle-right"></i>
         <div class="title-text">内部赛（3.20-3.21）</div>

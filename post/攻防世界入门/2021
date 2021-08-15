@@ -770,7 +770,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/post/攻防世界入门/" target="_blank" title="攻防世界 懵逼到此一游">http://example.com/post/攻防世界入门/</a>
+    <a href="/post/攻防世界入门/2021" target="_blank" title="攻防世界 懵逼到此一游">http://example.com/post/攻防世界入门/2021</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -793,7 +793,7 @@
     <div class="post-nav-img lazyload" data-original="/medias/1.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/post/%E8%BF%9C%E7%A8%8B%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AE%A1%E7%90%86%20%E5%AE%9E%E9%AA%8C%E4%BA%8C/" class="post-nav-link">
+    <a href="/post/%E8%BF%9C%E7%A8%8B%E4%BA%A4%E6%8D%A2%E6%9C%BA%E7%AE%A1%E7%90%86%20%E5%AE%9E%E9%AA%8C%E4%BA%8C/2021" class="post-nav-link">
       <div class="title">
         <i class="fa fa-angle-left"></i> 上一篇:
         <div class="title-text">远程交换机管理 实验二</div>
@@ -813,7 +813,7 @@
     <div class="post-nav-img lazyload" data-original="/medias/7.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/post/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAHexo+GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="post-nav-link">
+    <a href="/post/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAHexo+GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2/2021" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fa fa-angle-right"></i>
         <div class="title-text">搭建一个Hexo+Github的博客</div>
