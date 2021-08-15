@@ -732,6 +732,49 @@
         
       
 
+<!--时间-->
+<br /><br />
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span> <script language="javascript"> 
+
+  var now = new Date();
+ 
+  function createtime(){
+   var grt= new Date("01/08/2021 00:00:00");/*---这里是网站的启用时间--*/
+ 
+   now.setTime(now.getTime()+250);
+ 
+   days = (now - grt ) / 1000 / 60 / 60 / 24;
+ 
+   dnum = Math.floor(days);
+ 
+   hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+ 
+   hnum = Math.floor(hours);
+ 
+   if(String(hnum).length ==1 ){hnum = "0" + hnum;}
+ 
+   minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+ 
+   mnum = Math.floor(minutes);
+ 
+   if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+ 
+   seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+ 
+   snum = Math.round(seconds);
+ 
+   if(String(snum).length ==1 ){snum = "0" + snum;}
+ 
+   document.getElementById("timeDate").innerHTML = "苟延残喘了"+dnum+"天";
+ 
+   document.getElementById("times").innerHTML = hnum + "小时" + mnum + "分" + snum + "秒";
+ 
+  }
+  setInterval("createtime()",250); 
+ 
+ </script> 
+
+
 
                 
 <!-- 爱心 -->
@@ -742,7 +785,7 @@
 
 
     <div class="footer-copyright">
-      <p><br />S1Lu的小站<br /></a> Copyright © 2020 - 2021 <a target="_blank" rel="noopener" href="https://github.com/S1Lu/S1Lu.github.io">S1Lu</a></p>
+      <p></a> Copyright © 2020 - 2021 <a target="_blank" rel="noopener" href="https://github.com/S1Lu/S1Lu.github.io">S1Lu</a></p>
 
     </div>
     <div class="footer-custom">
