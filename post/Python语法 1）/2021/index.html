@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>远程交换机管理 实验二 | S1Lu‘s world</title>
+  <title>python语法 1） | S1Lu‘s world</title>
 
   
     
@@ -614,7 +614,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/1.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/2.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
@@ -622,7 +622,7 @@
   <div class="post-detail-header_info-box">
     <div class="title-box">
       <span class="title">
-        远程交换机管理 实验二
+        python语法 1）
       </span>
     </div>
     
@@ -638,11 +638,11 @@
       
         <div class="post-detail-header_wordcount">
           <span class="totalcount">
-            <i class="fa fa-file-text-o"></i> 字数统计: 851 |
+            <i class="fa fa-file-text-o"></i> 字数统计: 1.2k |
           </span>
   
           <span class="min2read">
-            <i class="fa fa-clock-o"></i> 阅读时长: 3分钟 |
+            <i class="fa fa-clock-o"></i> 阅读时长: 4分钟 |
           </span>
   
           
@@ -667,47 +667,136 @@
     <article class="post post-detail">
       
       <div class="post-content">
-        <h1 id="思科模拟器入门"><a href="#思科模拟器入门" class="headerlink" title="思科模拟器入门"></a>思科模拟器入门</h1><p>远程管理交换机  （实验二）</p>
-<h2 id="常用模式"><a href="#常用模式" class="headerlink" title="常用模式"></a>常用模式</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">用户模式               Switch&gt;</span><br><span class="line">特权模式               Switch#</span><br><span class="line">全局配置模式           Switch(config)#</span><br><span class="line">端口模式               Switch(config-if)#</span><br></pre></td></tr></table></figure>
-<h2 id="常用配置命令行"><a href="#常用配置命令行" class="headerlink" title="常用配置命令行"></a>常用配置命令行</h2><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">## 模式切换指令</span></span><br><span class="line"></span><br><span class="line">enable   进入特权模式（一般简写为en）</span><br><span class="line">config t    进入全局配置模式</span><br><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">fa</span> 0/1    进入交换机某个端口视图模式</span></span><br><span class="line"><span class="class"><span class="title">exit</span>    返回到上级模式</span></span><br><span class="line"><span class="class"><span class="title">end</span>    从全局以下模式返回到特权模式 </span></span><br><span class="line"><span class="class"></span></span><br><span class="line"><span class="class">## 快捷指令</span></span><br><span class="line"><span class="class"></span></span><br><span class="line">帮助信息(如? 、co?、copy?)</span><br><span class="line">命令简写(如 en 的完整命令为 enable)</span><br><span class="line">命令自动补全(Tab)</span><br><span class="line">快捷键(ctrl+c中断测试,ctrl+z退回到特权视图)</span><br><span class="line">reload   重启(在特权模式下)</span><br><span class="line">hostname    X修改交换机名称(在全局配置模式下)</span><br><span class="line"></span><br><span class="line"><span class="comment">## 端口配置指令</span></span><br><span class="line"></span><br><span class="line">speed,duplex    配置交换机端口参数</span><br><span class="line">show version    查看交换机版本信息</span><br><span class="line">show running-config   查看当前生效的配置信息</span><br><span class="line">show startup-config    查看保存在NVRAM中的启动配置信息</span><br><span class="line">show <span class="class"><span class="keyword">interface</span>   查看端口信息</span></span><br><span class="line"><span class="class"><span class="title">show</span> <span class="title">mac</span>-<span class="title">address</span>-<span class="title">table</span>    查看交换机的<span class="title">MAC</span>地址</span></span><br><span class="line">选择某个端口Switch(config)# interface  type mod/port</span><br><span class="line"> (type：端口类型，通常有ethernet、Fastethernet、Gigabitethernet；</span><br><span class="line"> mod：端口所在的模块；</span><br><span class="line"> port：在该模块中的编号；）:<span class="keyword">Switch</span>(config)<span class="comment"># interface fa 0/1;</span></span><br><span class="line"> 选择多个端口<span class="keyword">Switch</span>(config)<span class="comment">#interface  type mod/startport-endport </span></span><br><span class="line">如：<span class="keyword">Switch</span>(config)<span class="comment"># interface interface fa 0/1-5  //选择端口 fa 0/1 ~ fa 0/5</span></span><br><span class="line"> <span class="keyword">Switch</span>(config-<span class="keyword">if</span>)<span class="comment">#speed [10/100/auto]    设置端口通信速度</span></span><br><span class="line"> <span class="keyword">Switch</span>(config-<span class="keyword">if</span>)<span class="comment">#duplex [half/full/auto]    设置端口单双工模式</span></span><br><span class="line">若交换机设置为auto以外的具体速度，此时应注意保证通信双方也要有相同的设置值。</span><br><span class="line">注意事项：在配置交换机时，要注意交换机端口的单双工模式的匹配，如果链路一端设置的是全双工，另一端是自动协商，则会造成响应差和高出错率，丢包现象会很严重。通常两端设置为相同的模式。</span><br><span class="line"></span><br><span class="line"><span class="comment">## 密码设置指令</span></span><br><span class="line">设置进入特权模式的密码</span><br><span class="line"> <span class="keyword">Switch</span>(config)<span class="comment"># enable password ****** </span></span><br><span class="line">通过console端口连接设备及Telnet远程登录时所需的密码；</span><br><span class="line"></span><br><span class="line">  <span class="keyword">Switch</span>(config)<span class="comment"># line console 0   表示配置控制台线路，0是控制台的线路编号。</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">Switch</span>(config-line)<span class="comment"># login  用于打开登录认证功能。</span></span><br><span class="line"></span><br><span class="line">  <span class="keyword">Switch</span>(config-line)<span class="comment"># password 5ijsj   设置进入控制台访问的密码</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        <p><strong>缩进</strong>：python中的缩进是用来只是代码块<br>如果省略缩进则会报错，空格数取决于自己（在一个代码块中必须使用数目一样的空格）<br><strong>注释</strong>：# 开头（单行注释）<br>“””   “”” 三引号开始三引号结尾(多行注释)<br><strong>创建变量</strong>：python中创建变量没有声明变量的命令，首次赋值时，即是创建变量<br>对于字符串串变量而言，则需要使用单引号或双引号声明<br><strong>变量名称</strong>：变量可以使用短名称（如 x 和 y）或更具描述性的名称（age、carname、total_volume）。<br><strong>Python 变量命名规则</strong>：<br>变量名必须以字母或下划线字符开头<br>变量名称不能以数字开头<br>变量名只能包含字母数字字符和下划线（A-z、0-9 和 _）<br>变量名称区分大小写（age、Age 和 AGE 是三个不同的变量）<br><strong>向多个变量赋值：</strong>可以在一行中为多个变量赋值</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x, y, z = <span class="string">&quot;silu&quot;</span>, <span class="string">&quot;azhi&quot;</span>, <span class="string">&quot;shen&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p>1）打开交换机<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/2021040100154718.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>#逐渐增加 启动中</p>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401001606520.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
-<p>2）</p>
-<p>Switch 用户模式<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401001620989.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>3）<br>Switch# 特权模式</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enable</span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/2021040100173153.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>4）<br>Switch(config)# 进入全局配置模式</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">configure terminal</span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401001827303.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>5）<br>hostname switchA  配置交换机名字为“switchA”</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hostname switchA</span><br></pre></td></tr></table></figure>
+<pre><code>也可以为多个变量赋予相同的值
+</code></pre>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x = y = z = <span class="string">&quot;silu&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401001924172.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
-<p>6）<br>switchA(config-if) 进入交换机管理接口配置模式 </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">interface</span> <span class="title">vlan</span> 1</span></span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401001957838.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>7）<br>  配置交换机管理接口IP地址</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ip address 静态地址 网络掩码</span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002100429.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>8）<br>开启交换机管理接口</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">no shutdown</span><br></pre></td></tr></table></figure>
+<p>**输出变量：print语句</p>
+<ul>
+<li>文字 + 变量（需将文字放置引号内）</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="string">&quot;xiaozhi&quot;</span>          <span class="comment">#仅为x为字符串时成立</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;azhi&quot;</span> + x)</span><br></pre></td></tr></table></figure>
 
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002124159.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>9）<br>两种验证交换机管理IP地址已经配置，管理接口已经开启<br>一：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show ip <span class="class"><span class="keyword">interface</span></span></span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002234977.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>二：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show <span class="class"><span class="keyword">interface</span> <span class="title">vlan</span> 1</span></span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002308332.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>10）<br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/2021040100233658.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002342544.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002352823.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>11）<br>配置交换机远程登录密码  1表示远程登录,0表示是以密文形式传输,并设置交换机远程登录密码为“star“</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enable secret level <span class="number">1</span> <span class="number">0</span> star</span><br></pre></td></tr></table></figure>
+<ul>
+<li>对于数字而言 + 起运算符作用</li>
+</ul>
+<p><strong>格式化输出：</strong><br>格式化符号</p>
+<ul>
+<li>整形</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">6</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;今天学了%d个语法&quot;</span> %x)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;今天学了%03d个语法&quot;</span> %x) <span class="comment"># %03d 不足三位补零，超过三位原值。</span></span><br></pre></td></tr></table></figure>
 
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002441584.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"><br>12）<br>配置交换机特权模式密码。 15表示特权模式, 0表示是以密文形式传输,并设置交换机特权模式密码为“admin” </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">enable secret level <span class="number">15</span> <span class="number">0</span> admin</span><br></pre></td></tr></table></figure>
-<p><img "" class="lazyload placeholder" data-original="https://img-blog.csdnimg.cn/20210401002534411.png" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="在这里插入图片描述"></p>
-<p>声明引用：<a target="_blank" rel="noopener" href="https://blog.csdn.net/gengkui9897/article/details/85109962">大佬</a><br><a target="_blank" rel="noopener" href="https://docs.qq.com/doc/DTW9aR1ZpcmtrUHdT">原文档</a></p>
+<ul>
+<li>浮点型</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">5.50</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;小阿志%f元一斤&quot;</span> %x)   <span class="comment">#默认是六位小数</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;小阿志%0.2f元一斤&quot;</span> %x) </span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>字符串型</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="string">&#x27;azhi&#x27;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;室友%s胖胖的&quot;</span> %x)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>多个格式化输出</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&#x27;azhi&#x27;</span></span><br><span class="line">age = <span class="number">18</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;胖胖的室友叫%s，今年%d岁了&quot;</span> %(name,age))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;&quot;</span>胖胖的室友叫%s，明年%d岁了<span class="string">&quot; %(name,age+1)&quot;</span>)   <span class="comment">#多个格式化输出</span></span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>f’{}’ 格式化表达式</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">age = <span class="number">18</span></span><br><span class="line">name = azhi</span><br><span class="line"><span class="built_in">print</span>(<span class="string">f&#x27;室友的名字时<span class="subst">&#123;name&#125;</span>，今年<span class="subst">&#123;age&#125;</span>岁了&#x27;</span>) <span class="comment">#相对于%格式化 f格式化语法更简便更快捷。</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>全局变量：</strong></p>
+<ul>
+<li>在函数外部创建变量</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="string">&quot;azhui&quot;</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">myfunc</span>():</span></span><br><span class="line">  <span class="built_in">print</span>(x)</span><br><span class="line">myfunc()</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在函数内部创建全局变量，使用global关键字</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">myfunc</span>():</span></span><br><span class="line">  <span class="keyword">global</span> x</span><br><span class="line">  x = <span class="string">&quot;silu&quot;</span></span><br><span class="line">myfunc()</span><br><span class="line"><span class="built_in">print</span>(x)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>如果在函数内部创建与全局变量相同的名称的变量，该变量为局部变量，并且只能在函数内部使用，相同名称变量的全局变量将保留原样，并且拥有原始值</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="string">&quot;silu&quot;</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">myfunc</span>():</span></span><br><span class="line">  x = <span class="string">&quot;azhi&quot;</span></span><br><span class="line">  <span class="built_in">print</span>(x)</span><br><span class="line">myfunc()</span><br><span class="line"><span class="built_in">print</span>(x)</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>在函数内部更改全局变量的值，使用 global  关键字</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="string">&quot;silu&quot;</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">myfunc</span>():</span></span><br><span class="line">  <span class="keyword">global</span> x</span><br><span class="line">  x = <span class="string">&quot;azhi&quot;</span></span><br><span class="line">myfunc()</span><br><span class="line"><span class="built_in">print</span>(x)</span><br></pre></td></tr></table></figure>
+
+<p><strong>内置数据类型</strong><br>在编程中，数据类型是一个重要的概念。<br>变量可以存储不同类型的数据，并且不同类型可以执行不同的操作。<br>在这些类别中，Python 默认拥有以下内置数据类型：</p>
+<table>
+<thead>
+<tr>
+<th>文本类型：</th>
+<th>str</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>数值类型：</td>
+<td>int, float, complex</td>
+</tr>
+<tr>
+<td>序列类型：</td>
+<td>list, tuple, range</td>
+</tr>
+<tr>
+<td>映射类型：</td>
+<td>dict</td>
+</tr>
+<tr>
+<td>集合类型：</td>
+<td>set, frozenset</td>
+</tr>
+<tr>
+<td>布尔类型：</td>
+<td>bool</td>
+</tr>
+<tr>
+<td>二进制类型</td>
+<td>bytes, bytearray, memoryview</td>
+</tr>
+</tbody></table>
+<p><strong>获取数据类型</strong><br>您可以使用 type() 函数获取任何对象的数据类型：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="string">&quot;silu&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(x))</span><br></pre></td></tr></table></figure>
+
+<p><strong>类型转换</strong><br>您可以使用 int()、float() 和 complex() 方法从一种类型转换为另一种类型：</p>
+<p><strong>复数</strong><br>复数用 “j” 作为虚部编写<br><strong>多行字符串:</strong><br>用三个双（单）引号将多行字符串赋值给变量</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="string">&quot;&quot;&quot;Python is a widely used general-purpose, high level programming language. </span></span><br><span class="line"><span class="string">It was initially designed by Guido van Rossum in 1991 </span></span><br><span class="line"><span class="string">and developed by Python Software Foundation. </span></span><br><span class="line"><span class="string">It was mainly developed for emphasis on code readability, </span></span><br><span class="line"><span class="string">and its syntax allows programmers to express concepts in fewer lines of code.&quot;&quot;&quot;</span></span><br><span class="line"><span class="built_in">print</span>(a)</span><br></pre></td></tr></table></figure>
+
+<p><strong>字符串是数组</strong><br>像许多其他流行的编程语言一样，Python 中的字符串是表示 unicode 字符的字节数组。<br>但是，Python 没有字符数据类型，单个字符就是长度为 1 的字符串。<br>方括号可用于访问字符串的元素。</p>
+<p>获取位置 1 处的字符（第一个字符的位置为 0）：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="string">&quot;Hello, World!&quot;</span></span><br><span class="line"><span class="built_in">print</span>(a[<span class="number">0</span>])</span><br></pre></td></tr></table></figure>
+
+<p><strong>转义字符：#待补充</strong><br>\t （一个tab键四个空格）<br><strong>裁切：（含左不含右）</strong><br>指定开始索引和结束索引，以冒号分隔，以返回字符串的一部分。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">b = <span class="string">&quot;Hello, World!&quot;</span></span><br><span class="line"><span class="built_in">print</span>(b[<span class="number">2</span>:<span class="number">5</span>])  <span class="comment">#打印出 llo  注意：是从位置2打印到位置5（不含5）</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>负的索引：（-1是最后一个索引）</strong><br>获取从字符串末尾开始切片</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">b = <span class="string">&quot;Hello, World!&quot;</span></span><br><span class="line"><span class="built_in">print</span>(b[-<span class="number">5</span>:-<span class="number">2</span>])  <span class="comment">#打印出 orl 从位置5到位置1的字符，从字符串末尾开始计数</span></span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
 
       </div>
       <div class="post-tags-categories">
         
         <div class="tags">
           
-            <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="">
-              计算机网络
+            <a href="/tags/python/" class="">
+              python
             </a>
           
         </div>
@@ -721,7 +810,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/post/远程交换机管理 实验二/2021" target="_blank" title="远程交换机管理 实验二">http://example.com/post/远程交换机管理 实验二/2021</a>
+    <a href="/post/Python语法 1）/2021/" target="_blank" title="python语法 1）">http://example.com/post/Python语法 1）/2021/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -739,24 +828,37 @@
 
 
 
+  
+  <div class="post-nav-prev post-nav-item">
+    <div class="post-nav-img lazyload" data-original="/medias/12.jpg" style="background-size: cover; 
+      background-position: center center;">
+    </div>
+    <a href="/post/test/2021/" class="post-nav-link">
+      <div class="title">
+        <i class="fa fa-angle-left"></i> 上一篇:
+        <div class="title-text">GetFiles</div>
+      </div>
+      
+      <!-- <div class="content">
+        获取img文件夹下的所有文件4个巨鸡冲冲冲 .png/img/4个巨鸡冲冲冲 .pngindex.md/img/inde
+      </div> -->
+    </a>
+  </div>
+
 
 
   
   <div class="post-nav-next post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/medias/3.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="/medias/10.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/post/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C%E5%85%A5%E9%97%A8/2021" class="post-nav-link">
+    <a href="/post/hello-world/2021/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fa fa-angle-right"></i>
-        <div class="title-text">攻防世界 懵逼到此一游</div>
+        <div class="title-text">hello ，world！</div>
       </div>
       <!-- <div class="content">
-        入门001flag直接给出
-1flag&#123;th1s_!s_a_d4m0_4la9&#125;
-
-
-002.pdf
+        Welcome to Hexo! This is your very first post. Check documen
       </div> -->
     </a>
   </div>
