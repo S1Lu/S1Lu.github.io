@@ -40,6 +40,7 @@
     </script>
   
   
+  
 <link rel="stylesheet" href="/css/animate.min.css">
 
   
@@ -70,6 +71,12 @@
         <script src="/js/valine/av-min@3.0.4.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/HCLonely/Valine@latest/dist/Valine.min.js"></script>
     
+
+    <!-- import link -->
+    
+    <!-- import script -->
+    
+
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="S1Lu‘s world" type="application/atom+xml">
 </head>
 
@@ -622,7 +629,7 @@
     
       
         <span class="post-detail-header_date">
-          <i class="fa fa-calendar"></i> 发表于：2021-05-02 |
+          <i class="fa fa-calendar"></i> 发表于：2021-08-16 |
         </span>
       
 
@@ -823,19 +830,17 @@
 
   
   <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/medias/7.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="/medias/12.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/post/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAHexo+GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2/2021" class="post-nav-link">
+    <a href="/post/test/2021" class="post-nav-link">
       <div class="title">
         <i class="fa fa-angle-left"></i> 上一篇:
-        <div class="title-text">搭建一个Hexo+Github的博客</div>
+        <div class="title-text">GetFiles</div>
       </div>
       
       <!-- <div class="content">
-        一：搭建前的环境准备（1）Node.js 的安装和准备在浏览器上搜索node点进去下载按步骤安装
-详细安装过程
-（2）g
+        获取img文件夹下的所有文件4个巨鸡冲冲冲 .png/img/4个巨鸡冲冲冲 .pngindex.md/img/inde
       </div> -->
     </a>
   </div>
@@ -1933,7 +1938,7 @@
 
   <script>
     var pjax = new Pjax({
-      elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"])',   // 拦截正常带链接的 a 标签
+      elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([no-pjax])',   // 拦截正常带链接的 a 标签
       selectors: ["#pjax-container","title"],                                   // 根据实际需要确认重载区域
       cacheBust: false,   // url 地址追加时间戳，用以避免浏览器缓存
       timeout: 5000
