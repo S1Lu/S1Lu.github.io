@@ -817,18 +817,18 @@
 
   
   <div class="post-nav-next post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/medias/7.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="/medias/4.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
     <a href="/post/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAHexo+GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2/2021" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fa fa-angle-right"></i>
-        <div class="title-text">搭建一个Hexo+Github的博客</div>
+        <div class="title-text">搭建一个hexo+GitHub博客</div>
       </div>
       <!-- <div class="content">
-        一：搭建前的环境准备（1）Node.js 的安装和准备在浏览器上搜索node点进去下载按步骤安装
-详细安装过程
-（2）g
+        新新补充：目录设置。新补充：电脑更换系统或更换电脑博客的重新部署，由于电脑原因我重现下了系统。
+
+一：搭建前的环境准备（
       </div> -->
     </a>
   </div>
