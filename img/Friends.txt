@@ -1,0 +1,7 @@
+{
+    "title": "S1Lu_blog",
+    "url": "https://s1lu.github.io",
+    "avatar": "http://q1.qlogo.cn/g?b=qq&nk=690534004&s=640",
+    "screenshot": "https://image.thum.io/get/width/1024/crop/768/https://s1lu.github.io/",
+    "description": "hi"
+}
