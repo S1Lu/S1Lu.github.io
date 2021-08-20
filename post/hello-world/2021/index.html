@@ -899,7 +899,7 @@
 		background: rgba(255,255,255,0.9);
 	}
 	#veditor {
-		background-image: url('http://S1Lu.github.io/post/GetFile/2021/评论区表情.gif');
+		background-image: url('https://s1lu.github.io/img/%E8%AF%84%E8%AE%BA%E5%8C%BA%E8%A1%A8%E6%83%85.gif');
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: right;
@@ -1097,7 +1097,7 @@
                 }
             },
             play() {
-                let bgImgDelay = '' || '180000'
+                let bgImgDelay = '' || '60000'
                 let delay = parseInt(bgImgDelay) || 180000;
                 this.time = setInterval(this.autoPlay, delay);
             },
@@ -1115,7 +1115,7 @@
             clearInterval(this.time);
         },
         mounted() {
-            let prop = ''|| '(&#39;https://s1lu.github.io/img/bgImg-%E6%B4%BE%E8%92%99.jpg&#39;or&#39;https://s1lu.github.io/img/dibubeijing.gif&#39;or&#39;https://s1lu.github.io/img/222.png&#39;or&#39;https://s1lu.github.io/img/666.png&#39;)';
+            let prop = ''|| 'https://s1lu.github.io/img/bgImg-%E6%B4%BE%E8%92%99.jpg,https://s1lu.github.io/img/666.png';
             let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://') 
             if (isImg) {
                 let img = prop.split(',');
@@ -1366,7 +1366,7 @@
   type="playlist"
   id="7683400926"
   fixed='true'
-  autoplay='true'
+  autoplay='false'
   theme='#42b983'
   loop='all'
   order='random'
