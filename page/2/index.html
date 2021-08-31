@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>⛳数据库的简单操作! | S1Lu‘s world</title>
+  <title>S1Lu‘s world</title>
 
   
     
@@ -623,538 +623,789 @@
 
     <!-- 内容区域 -->
     <main class="main" id="pjax-container" style="margin-top: 0;">
-      
- <!-- prismjs 代码高亮 -->
- 
+      <!-- 首页轮播 -->
+<link href="/js/swiper/swiper@5.4.1.min.css" rel="stylesheet">
 
 
-<div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -1;"></div>
-
-<!-- 文章详情页顶部图片和标题 -->
+  <link href="/js/vue-typed-js/index.css" rel="stylesheet">
 
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/10.jpg" style="background-repeat: no-repeat; background-size: cover; 
-  background-position: center center;position: relative;">
-  <div class="post-detail-header-mask"></div>
-  <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
-  
-  <div class="post-detail-header_info-box">
-    <div class="title-box">
-      <span class="title">
-        ⛳数据库的简单操作!
-      </span>
-    </div>
-    
+
+
+<div class="swiper-length" style="display: none;">1</div>
+<div id="appSwiper"
+  class="swiper-no-swiping"
+  @mouseenter="stopAutoPlay()" 
+  @mouseleave="startAutoPlay()"
+>
+  <swiper v-cloak ref="mySwiper" :options="swiperOptions" @slideChangeTransitionEnd="slideChangeTransitionEnd">
     
       
-        <span class="post-detail-header_date">
-          <i class="fa fa-calendar"></i> 发表于：2021-08-30 |
-        </span>
+        <swiper-slide>
+          <div class="item swiper-lazy" data-background="https://s1lu.github.io/img/YingHua.gif" style="background-size: 300000px; 
+            background-position: left center;" style="position: relative;">
+            <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
+              <div class="flag">
+                
+                <div class="swiper-video">
+                  <video class="full-video" poster="https://img14.360buyimg.com/ddimg/jfs/t1/175057/18/19582/882056/60ee7ac8Ef0045710/202d2ad878684a3b.gif" autoplay loop muted style="width: 100%;height:100%;object-fit: cover;">
+                    <source style="width: 100%;height: 100vh;"  src="https://s1lu.github.io/img/beijing.mp4">
+                  </video>
+                  <div class="swiper-video-maskBox"></div>
+                </div>
+                
+                <div class="img-mask swiper-lazy swiper-default-bgImg" data-background="https://s1lu.github.io/img/YingHua.gif" style="height: 100%; background-size: cover; 
+                  background-position: center center;">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>   
+                </div>
+                <div class="flag-text">
+                  <div class="flag-text-content">
+                    <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">S1Lu的小站</div>
+                    
+                      <div class="ani animated default-excerpt" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">
+                        <vue-typed-js :strings="defaultDesc" :loop="defaultDescTypedLoop" :type-speed="100" :back-speed="50">
+                          <h1 class="typing"></h1>
+                        </vue-typed-js>
+                      </div>
+                      
+                  </div>
+                  <div style="display: flex;" class="flag-text-btns">
+                    
+                      <div class="ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a href="/archives" class="read-more swiper-btn-color" style="display: inline-block; z-index:1;">阅读文档</a></div>
+                    
+                    
+                      <div class="ani animated" style="margin-left: 10px;" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a href="/tags" class="read-more swiper-btn-color2" style="display: inline-block; z-index:1;border: 1px solid white;">标签分类</a></div>
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+        </swiper-slide>
       
-
       
-
-      
-        <div class="post-detail-header_wordcount">
-          <span class="totalcount">
-            <i class="fa fa-file-text-o"></i> 字数统计: 1.7k |
-          </span>
-  
-          <span class="min2read">
-            <i class="fa fa-clock-o"></i> 阅读时长: 6分钟 |
-          </span>
-  
-          
-            <span class="reading">
-              <i class="fa fa-eye"></i> 阅读量：<span id="busuanzi_value_page_pv"></span>
-            </span>
-          
-        </div>
-      
-    
-  </div>
-  
-  
-    <script src="/js/bubble/bubble.js"></script>
-  
-</div>
-
-
-
-<div class="row justify-position">
-  <div class="main-content">
-    <article class="post post-detail">
-      
-      <div class="post-content">
-        <p>``</p>
-<h1 id="1️⃣数据库基本概念"><a href="#1️⃣数据库基本概念" class="headerlink" title="1️⃣数据库基本概念"></a>1️⃣数据库基本概念</h1><pre><code>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">数据库：信息存储的仓库，包括一系列的关系措施！</span><br><span class="line">表:一个数据库中可以有若干张表（形式上你可以看出我们日常生活中建立的表）</span><br><span class="line">字段:表里面的信息会分若干个栏目来存，这些栏目呢，我们在数据库技术中叫<span class="string">&quot;字段&quot;</span>,栏目里面存的具体信息叫<span class="string">&quot;字段值&quot;</span></span><br><span class="line">记录：一条信息我们叫一条记录</span><br><span class="line">一个数据库管理系统中可以建立若干个数据库，每个数据库中又可以建立若干张表,每张表中可以有若干条记录。</span><br></pre></td></tr></table></figure>
-</code></pre>
-<h1 id="2️⃣-My-SQL使用入门"><a href="#2️⃣-My-SQL使用入门" class="headerlink" title="2️⃣(My)SQL使用入门"></a>2️⃣(My)SQL使用入门</h1><pre><code>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br></pre></td><td class="code"><pre><span class="line">	show databases;	查看数据库列表</span><br><span class="line">	1)创建数据库</span><br><span class="line">		1&gt;create database 数据库名;</span><br><span class="line">		2&gt;选择要操作的数据库：USE 数据库; 对于要操作的数据库我们需要使用use来选择一下！</span><br><span class="line">		3&gt;查看数据库中所有的数据表show tables;</span><br><span class="line">	2)删除数据库</span><br><span class="line">		drop database 数据库名称;</span><br><span class="line">	3)创建表(在哪个数据库里面创建表需要先使用use选择到那个要操作的数据库)</span><br><span class="line">		1&gt;创建表</span><br><span class="line">			create table 表名(</span><br><span class="line">				字段1名 字段1类型  列的约束条件,</span><br><span class="line">				字段2名 字段2类型  列的约束条件,</span><br><span class="line">				...</span><br><span class="line">						)</span><br><span class="line">		2&gt;创建完表之后可以查看表的定义</span><br><span class="line">              desc 表名;</span><br><span class="line">		3&gt;查看创建表的SQL语句</span><br><span class="line">              show create table 表名 \G</span><br><span class="line">              \G选项使得记录能够按照字段竖向排列，以便更好地显示内容较长的记录，\G后面无需再加分号</span><br><span class="line">	4)删除表</span><br><span class="line">		drop table 表名;</span><br><span class="line">	5)修改表</span><br><span class="line">		1&gt;修改表的字段类型</span><br><span class="line">              alter table 表名 modify [column] 字段定义  [first|after 字段名];</span><br><span class="line">		2&gt;增加表字段</span><br><span class="line">              alter table 表名 add [column] 字段定义 [first|after 字段名];</span><br><span class="line">		3&gt;删除表字段 </span><br><span class="line">		   alter table 表名 drop [column]  字段名;</span><br><span class="line">		4&gt;字段改名</span><br><span class="line">              alter table 表名 change [column] 旧的字段名 字段定义 [first|after 字段名];</span><br><span class="line">		   注：change与modify都可以修改表的定义，不同的是change后面需要接两次列名，不方便，但是优点是change可以修改字段名称</span><br><span class="line">		5&gt;修改字段排列排序</span><br><span class="line">		   前面介绍的字段增加和修改语法(add/change/modify)中，都有一个可选项first|after 字段名,这个选择可以用来修改</span><br><span class="line">              字段在表中的位置新增的字段默认是加载在表中最后位置，而change/modify 默认都不会改变字段的位置</span><br><span class="line">		   alter table t1 modify id2 tinyint first;</span><br><span class="line">		   alter table t1 modify id2 tinyint after id1;</span><br><span class="line">		   注意：change/first|after 字段名 这些关键字都是属于MySQL在标准SQL上的扩展，在其他的数据库上不一定适用</span><br><span class="line">		6)更改表名</span><br><span class="line">              alter table 表名 rename [to] 新的表名;</span><br><span class="line">4.DML语句</span><br><span class="line">	查询 select * from 表名;</span><br><span class="line">	1)插入记录</span><br><span class="line">		1&gt;插入记录</span><br><span class="line">			insert into 表名(字段1,字段2,字段3,...,字段n)  values(值1,值2,值3,...,值n);</span><br><span class="line">			也可以不用指定字段名，但是values后面的顺序应该和字段的排序一致</span><br><span class="line">		2&gt;一次插入多条记录</span><br><span class="line">			 insert into 表名(字段1,字段2,字段3,...,字段n)</span><br><span class="line">			 values</span><br><span class="line">			 (值1,值2,值3,...,值n),</span><br><span class="line">			 (值1,值2,值3,...,值n),</span><br><span class="line">			 (值1,值2,值3,...,值n)</span><br><span class="line">			 ;</span><br><span class="line">	2)更新记录</span><br><span class="line">		1&gt;更新一个表</span><br><span class="line">			update 表名 <span class="built_in">set</span> 字段1=值1,字段2=值2,...字段n=值n [<span class="built_in">where</span> 条件];</span><br><span class="line">		2&gt;更新多个表中数据</span><br><span class="line">			update 表1,表2,...表n <span class="built_in">set</span> 表1.字段1=表达式1,表n.字段n=表达式n [<span class="built_in">where</span> 条件];</span><br><span class="line">			注：多表更新更多的用在根据一个表的字段来动态的更新另外一个表的字段</span><br><span class="line">			简单实例：</span><br><span class="line">			update t1,t2 <span class="built_in">set</span> t1.age=2000,t2.age=3000 <span class="built_in">where</span> t1.id=1 and t2.id=1;</span><br><span class="line">	3)删除记录</span><br><span class="line">		1&gt;删除单表中的数据  </span><br><span class="line">			delete from 表名 [<span class="built_in">where</span> 条件];</span><br><span class="line">		2&gt;删除多个表中的数据</span><br><span class="line">			delete 表1,表2,...表n from 表1,表2,...表n [<span class="built_in">where</span> 条件];</span><br><span class="line">			不管是单表还是多表，不加<span class="built_in">where</span>条件将会把表中的所有记录删除，所以操作时一定要小心。</span><br><span class="line">	4)查询记录</span><br><span class="line">		select 字段名|* from 表名;</span><br><span class="line">		1&gt;查询不重复的记录</span><br><span class="line">			SELECT distinct field1,field2 FROM 表名;</span><br><span class="line">			只要field1,field2任何一个字段有不同就会被选择！</span><br><span class="line">			一般使用distinct,只筛选一个字段!</span><br><span class="line">		2&gt;条件查询</span><br><span class="line">			注：条件字段比较符号：</span><br><span class="line">				=,&lt;,&gt;,&gt;=,&lt;=,!=等比较运算符</span><br><span class="line">				多个条件之间可以使用or and等</span><br><span class="line">				<span class="built_in">where</span> 后面接条件</span><br><span class="line">				select * from 表名 <span class="built_in">where</span> 条件</span><br><span class="line">		3&gt;排序和限制</span><br><span class="line">			排序:</span><br><span class="line">				asc:由低到高，也是默认值</span><br><span class="line">					select * from employee order by salary asc;</span><br><span class="line">				desc:由高到底</span><br><span class="line">					select * from employee order by salary desc;</span><br><span class="line">				多个字段排序</span><br><span class="line">					select * from employee order by salary desc,id desc;</span><br><span class="line">			限制:</span><br><span class="line">				在语句的最后面 加上<span class="built_in">limit</span> 数字1,数字2 来进行查询数量的限制。</span><br><span class="line">				<span class="built_in">limit</span> 数字1,数字2 	数字1代表从第几条记录开启取(是从0开始的)，数字2代表取几条！	</span><br><span class="line">		4&gt;聚合</span><br><span class="line">			①sum求和</span><br><span class="line">				select sum(字段名) from 表名;</span><br><span class="line">			②count记录总数</span><br><span class="line">				select count(*|字段名) from 表名;</span><br><span class="line">			③max最大值</span><br><span class="line">				select max(字段名) from 表名;</span><br><span class="line">			④min最小值</span><br><span class="line">				select min(字段名) from 表名;</span><br><span class="line">			⑤GROUP BY分类聚合</span><br><span class="line">				select department,sum(salary) from employee group by department;</span><br><span class="line">			⑥WITH ROLLUP分类聚合后的结果进行再汇总</span><br><span class="line">				select sum(salary) from employee group by department with rollup;</span><br><span class="line">			⑦HAVING</span><br><span class="line">				 注意：having和<span class="built_in">where</span>的区别在于，having是对聚合后的结果进行条件过滤，而<span class="built_in">where</span>是在聚合前就对记录进行过滤</span><br><span class="line">                         ，应该尽可能的对记录进行先过滤！</span><br><span class="line">				select sum(salary) from employee group by department having sum(salary)&gt;1000;</span><br><span class="line">			在一起使用：select sum(id),max(id),min(id),count(*) from a1;</span><br><span class="line">		5&gt;表连接</span><br><span class="line">			需求：显示多个表中的字段的时候即可使用表连接</span><br><span class="line">			连接分类</span><br><span class="line">				内连接：选取两张表中相互匹配的记录</span><br><span class="line">				外连接：不仅仅选取两张相互匹配的记录，并且会选出其他不匹配的记录	</span><br><span class="line">			举例：</span><br><span class="line">				内连接：select 表.字段,....  from 表1名,表2名,...  <span class="built_in">where</span> [匹配的条件比如 表1.字段=表2.字段];</span><br><span class="line">						select 语句可以给字段起别名!直接写在需要查询显示的字段的后面就ok</span><br><span class="line">								给表起别名</span><br><span class="line">				外连接</span><br><span class="line">				  1)左连接</span><br><span class="line">						概念：包含左边表中的所有记录(包括右表中没有和它匹配的记录)</span><br><span class="line">								select ename,deptname from emp left join dept on emp.deptno=dept.deptno;</span><br><span class="line">				  2)右连接</span><br><span class="line">						概念：包含右边表中的所有记录(包括左表中没有和它匹配的记录)</span><br><span class="line">					左连接和右连接是可以相互转换的！</span><br></pre></td></tr></table></figure>
-
-            
-</code></pre>
-
-      </div>
-      <div class="post-tags-categories">
         
-        <div class="tags">
-          
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="">
-              数据库
-            </a>
-          
-        </div>
         
-      </div>
       
-        <div class="copyright">
-  <ul class="post-copyright">
-    <li class="post-copyright-author">
-    <strong>作者:  </strong>S1Lu</a>
-    </li>
-    <li class="post-copyright-link">
-    <strong>文章链接:  </strong>
-    <a href="//post/⛳对数据库的简单认识!/2021/" target="_blank" title="⛳数据库的简单操作!">http://example.com//post/⛳对数据库的简单认识!/2021/</a>
-    </li>
-    <li class="post-copyright-license">
-      <strong>版权声明:   </strong>
-      本网站所有文章除特别声明外,均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
-      许可协议。转载请注明出处!
-    </li>
-  </ul>
-<div>
+        
+        
       
-    </article>
-    <!-- 上一篇文章和下一篇文章 -->
+        
+        
+      
+        
+        
+      
+        
+        
+          
+          <swiper-slide>
+            <div class="item swiper-lazy" data-background="/medias/1.jpg" style=" background-size: 300000px; 
+            background-position: left center;" style="position: relative;">
+              <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
+              <div class="flag" style="z-index: 2;">
+                <div class="img-mask swiper-lazy" data-background="/medias/1.jpg" style="height: 100%; background-size: cover; 
+                  background-position: center center;">
+                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>  
+                </div>
+                <div class="flag-text">
+                  <div class="flag-text-content">
+                    <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">
+                      <a href="/post/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C%E5%85%A5%E9%97%A8/2021/">
+                        攻防世界 懵逼到此一游
+                      </a>
+                    </div>
+                    <div class="excerpt ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">入门001flag直接给出
+1flag&#123;th1s_!s_a_d4m0_4la9&#125;
+
+
+002.pdf
+图下边神马都没有 是假的。打开 直接 ctr+v
+1flag&#123;security_through_obscur</div>
+                  </div>
+                  <div class="bottom-one-btn ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a href="/post/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C%E5%85%A5%E9%97%A8/2021/" class="read-more swiper-btn-color" style="display: inline-block; z-index:1;">阅读更多</a></div>
+                </div>
+              </div>
+            </div>
+
+          </swiper-slide>
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+        
+        
+      
+    <div class="swiper-pagination" slot="pagination" pointer style="display: none;"></div>
+    <div class="swiper-button-prev swiper-button-white" pointer slot="button-prev" style="display: none;"></div>
+    <div class="swiper-button-next swiper-button-white" pointer slot="button-next" style="display: none;"></div>
     
-      <!-- 文章详情页的上一页和下一页 -->
-<div class="post-nav">
-
-
-
+  </swiper>
   
-  <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/medias/10.jpg" style="background-size: cover; 
-      background-position: center center;">
+    <div id="scroll-down" @click="toPostContent()">
+      <a href="javascript:;">
+        <i class="fa fa-angle-down scroll-down-effects"></i>
+      </a>
     </div>
-    <a href="/post/%E6%95%B0%E6%8D%AE%E4%B8%8E%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/2021/" class="post-nav-link">
-      <div class="title">
-        <i class="fa fa-angle-left"></i> 上一篇:
-        <div class="title-text">数据与结构算法课堂笔记</div>
-      </div>
-      
-      <!-- <div class="content">
-        数据与结构算法课堂笔记绪论（8月30日/2021）1️⃣  数据项用于描述数据元素，他是数据的最小单位。
-2️⃣ 数据元
-      </div> -->
-    </a>
-  </div>
-
-
-
   
-  <div class="post-nav-next post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/medias/4.jpg" style="background-size: cover; 
-      background-position: center center;">
-    </div>
-    <a href="/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%952021-08-30%EF%BC%89/2021/" class="post-nav-link">
-      <div class="title">
-        下一篇: <i class="fa fa-angle-right"></i>
-        <div class="title-text">数据结构与算法的简单归类</div>
-      </div>
-      <!-- <div class="content">
-        数据库原理与应用数据结构：线性表数组链表栈队列树多路查找树二叉树堆其他散列表散列函数冲突解决动态扩容位图图等等算法递归、
-      </div> -->
-    </a>
-  </div>
-
+  <canvas id="header_canvas"style="position:absolute;bottom:0;width:100%;pointer-events:none;"></canvas>
 </div>
 
-    
-    
-
-    <!-- 打赏 -->
-    
-      <div id="appDonate" class="post-donate">
-  <div id="donate_board" class="donate_bar center" ref="donate">
-    <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏" @click="showDialogDrawer()"></a>
-  </div>
-  <transition name="fade">
-    <div 
-      class="donate-box-mask"
-      v-cloak 
-      v-if="visible"
-      @click="cancelDialogDrawer()"
-    >
-    </div>
-  </transition>
-  <transition name="bounce">
-    <div class="donate-box" v-cloak v-if="visible">
-      <div class="donate-box_close">
-        <i class="fa fa-times" aria-hidden="true" @click="cancelDialogDrawer" pointer></i>
-      </div>
-      <div class="donate-box_title">
-        <h4>
-          你的赏识是我前进的动力
-        </h4>
-      </div>
-      <div class="donate-box_tab">
-        <div class="Alipay" pointer :class="{'active': tabActive === 'Alipay'}" @click="changeTabActive('Alipay')">
-          支付宝
-        </div>
-        <div class="WeChatpay" pointer :class="{'active': tabActive === 'WeChatpay'}" @click="changeTabActive('WeChatpay')">
-          微信
-        </div>
-      </div>
-      <div class="donate-box_img">
-        <div class="AlipayImg" v-if="tabActive === 'Alipay'">
-          <img src="/medias/zfb.jpg" alt="支付宝打赏" />
-        </div> 
-        <div class="WeChatpayImg" v-if="tabActive === 'WeChatpay'">
-          <img src="/medias/wx.jpg" alt="微信打赏" />
-        </div>
-      </div>
-    </div>
-  </transition>
-</div>
+<script type="text/javascript">
+  Vue.use(window.VueAwesomeSwiper)
+</script>
 
 <script>
-  var body = document.body || document.documentElement || window;
+  var autoplay = JSON.parse('false');
+  var delay = '5000';
+  var loop = JSON.parse('true') ? false : JSON.parse('true');
+  var effect = 'slide';
+  var swiperLength = parseInt(document.querySelector(".swiper-length").innerText);
+  var defaultDesc = '心若浮沉，淡笑安然。|Heart if ups and downs，smile Enron';
+  defaultDesc = defaultDesc.split(',');
+  var defaultDescTypedLoop = JSON.parse('true');
   var vm = new Vue({
-    el: '#appDonate',
+    el: '#appSwiper',
     data: {
-      visible: false,
-      tabActive: 'Alipay',
-      top: 0,
+      defaultDesc: defaultDesc,
+      defaultDescTypedLoop,
+      swiperOptions: {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true // 允许点击小圆点跳转
+        },
+        loop: loop ? true : false,
+        effect, // fade
+        autoplay: (autoplay && swiperLength > 1) ? {
+  　　　　delay,
+  　　　　disableOnInteraction: false // 手动切换之后继续自动轮播
+    　　} : false,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        lazy: {
+          loadPrevNext: true,
+        },
+        on:{
+          init: function() {
+            swiperAnimateCache(this); //隐藏动画元素 
+            swiperAnimate(this); //初始化完成开始动画
+          }, 
+          slideChangeTransitionEnd: function(){ 
+            swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
+          } 
+        }
+        // Some Swiper option/callback...
+      }
     },
     computed: {
+      swiper() {
+        return this.$refs.mySwiper.$swiper
+      }
     },
     mounted() {
+      // console.log('Current Swiper instance object', this.swiper)
+      // this.swiper.slideTo(0, 1000, false)
     },
     methods: {
-      showDialogDrawer() {
-        this.visible = true;
-        // 防止页面滚动，只能让弹框滚动
-        // function getScroll() {
-        //   return {
-        //     left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0,
-        //     top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
-        //   };
-        // }
-        this.top = $(document).scrollTop() // or getScroll().top
-        // console.log('aa', $('.main-content'));
-        body.style.cssText = 'overflow: hidden;';
+      stopAutoPlay() {
+        (autoplay && swiperLength > 1) && this.swiper.autoplay.stop();
       },
-      cancelDialogDrawer() {
-        this.visible = false;
-        body.removeAttribute('style');
-        $(document).scrollTop(this.top)
+      startAutoPlay() {
+        (autoplay && swiperLength > 1) && this.swiper.autoplay.start();
       },
-      changeTabActive(name) {
-        this.tabActive = name;
+      slideChangeTransitionEnd() {
+        console.log('1');
+      },
+      toPostContent() {
+        const fullHeight = $(window).height() - 60;
+        $('html,body').animate({scrollTop: fullHeight},500);
       }
     },
     created() {}
   })
 </script>
-    
 
-    <!-- 分享 -->
-    
-      <!-- https://github.com/overtrue/share.js -->
-<!-- 文章详情页的分享 -->
-<div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
-
-<script src="/js/shareJs/social-share.min.js"></script>
-</script>
+  <script src="/js/bubble/homeBubble.js"></script>
 
 <style>
-  .social-share {
-    margin: 20px 0;
+#appSwiper {
+  position: relative;
+  user-select: none;
+}
+.default-excerpt {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  font-family: Titillium Web,'PingFang SC','Hiragino Sans GB','Microsoft JhengHei','Microsoft YaHei',sans-serif;
+}
+.bottom-one-btn {
+  margin-top: 15px;
+}
+.swiper-container {
+  overflow: hidden;
+  z-index: 0;
+}
+.swiper-slide {
+  height: 350px;
+  position: relative;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  padding: 10px 10px;
+  transition: background 0.2s;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+.swiper-slide .item {
+  width: 100%;
+  height: 100%;
+}
+.flag {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  color: #ffffff;
+  height: 100%;
+  background: #000;
+}
+.flag img {
+  min-height: 100%;
+}
+.flag-text {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 80%;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 9999;
+}
+.flag-text .title {
+  font-size: 1.8rem;
+  font-family: Long Cang,cursive;
+}
+.flag-text .title a {
+  color: #fff;
+  transition: color 0.3s;
+}
+.flag-text .title a:hover {
+  color: #200700;
+}
+.flag-text .excerpt {
+  color: #eee;
+  font-family: Ubuntu,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  width: 70%;
+  line-height: 30px;
+  height: 150px;
+  margin-top: 2%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #42b983;
+}
+.img-mask {
+  opacity:0.6; filter: alpha(opacity=60);
+}
+.flag-text .read-more {
+  margin-bottom: 30px;
+  padding: 5px 15px;
+  color: #ffffff;
+  border-radius: 20px;
+}
+#scroll-down {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2;
+}
+#scroll-down a {
+  color: #fff;
+}
+@-webkit-keyframes rightan
+  {
+  
+  0%
+  {
+    transform: translateY(0);
+    opacity: 0.5;
   }
+  50% {
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+  100%
+  {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+}
+.scroll-down-effects {
+  animation: rightan 1.5s infinite;
+}
+/* 当头部导航设置为背景透明的时候 */
+
+  .swiper-slide {
+    height: 400px;
+  }
+  .flag-text {
+    top: 80px;
+  }
+
+
+@media (min-width: 992px) {
+  .swiper-button-prev {
+    margin-left: 20%;
+    transform: translateX(-180%);
+  }
+  .swiper-button-next {
+    margin-right: 20%;
+    transform: translateX(180%);
+  }
+  .flag-text .title {
+    width: 80%;
+    line-height: 35px;
+    max-height: 70px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+}
+@media (max-width: 992px) {
+  .flag {
+    width: 100%;
+  }
+  .flag-text .title {
+    font-size: 1.5rem;
+    margin-top: 50px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .flag-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .flag-text .excerpt {
+    width: 100%;
+    line-height: 25px;
+    height: 125px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+  }
+  .flag-text .read-more {
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 992px) and (min-width: 551px) {
+  .flag-text .excerpt {
+    width: 70%;
+  }
+}
+@media (max-width: 551px) {
+  .swiper-slide {
+    height: 250px;
+  }
+  .flag-text .title {
+    line-height: 30px;
+    max-height: 60px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-top: 20px;
+  }
+  .flag-text .excerpt {
+    font-size: 1rem;
+    line-height: 20px;
+    height: 80px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+  .flag-text .excerpt { 
+    margin-top: 10px;
+  }
+  .flag-text .read-more {
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    transform: scale(0.5);
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+}
+/* 当头部导航设置为背景透明的时候 */
+
+  @media (max-width: 992px) {
+    .flag-text {
+      top: 60px;
+      height: 80%;
+    }
+  }
+  @media (max-width: 551px) {
+    .swiper-slide {
+      height: 310px;
+    }
+  }
+
+
+/* 文字或者按钮居中显示 */
+
+  .flag-text {
+    left: 10%;
+  }
+  .flag-text .flag-text-content {
+    width: 100%;
+    text-align: center;
+  }
+  .flag-text .title {
+    width: 100%;
+    text-align: center;
+  }
+  .flag-text .excerpt { 
+    width: 100%;
+    text-align: center;
+  }
+  .bottom-one-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .default-excerpt {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-family: Titillium Web,'PingFang SC','Hiragino Sans GB','Microsoft JhengHei','Microsoft YaHei',sans-serif;
+  }
+  .flag-text-btns {
+    justify-content: center;
+  }
+  @media (min-width: 992px) {
+    .flag-text .excerpt {
+      line-height: 30px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+      overflow: hidden;
+    }
+  }
+  @media (max-width: 992px) {
+    .flag-text {
+      margin-left: 0;
+      transform: translateX(0);
+    }
+  }
+
+
+
+
+/* 全屏显示 */
+
+  .flag {
+    width: 100%;
+  }
+  .swiper-slide {
+    height: calc(100vh - 60px);
+    
+      height: 100vh;
+    
+  }
+  .flag-text {
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    width: 70%;
+    height: auto;
+  }
+  .flag-text .title {
+    font-size: 2.8rem;
+    line-height: 1.5em;
+    max-height: none;
+    /* overflow: visible; */
+  }
+  .flag-text .excerpt {
+    font-size: 1.25rem;
+    height: 150px;
+  }
+  .flag-text .read-more {
+    margin-top: 10px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin-top: -60px!important;
+  }
+  .swiper-btn-color,
+  .swiper-btn-color2 {
+    background-color: transparent;
+    border: 1px solid #fff;
+  }
+  .swiper-btn-color:hover,
+  .swiper-btn-color2:hover {
+    background-color: #200700;
+    border: 1px solid #200700!important;
+  }
+  .flag-text-btns {
+    justify-content: center;
+  }
+  .swiper-button-prev {
+    margin-left: 10px;
+    transform: translateX(0);
+    border-radius: 50%;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+  }
+  .swiper-button-next {
+    margin-right: 10px;
+    transform: translateX(0);
+    border-radius: 50%;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 1.2rem;
+  }
+  @media (min-width: 992px) {
+    .flag-text .excerpt {
+      line-height: 35px;
+      height: 175px;
+    }
+    .default-excerpt {
+      min-height: 150px;
+    }
+    .typed-element {
+      align-items: unset;
+    }
+  }
+  @media (max-width: 992px) {
+    .flag-text {
+      margin-left: 0;
+      height: 60%;
+      top: 55%;
+    }
+    .flag-text .title {
+      font-size: 2.4rem;
+      margin-top: 0;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+    .flag-text .excerpt {
+      line-height: 35px;
+      height: 185px;
+    }
+    .flag-text .read-more {
+      margin-top: 20px;
+    }
+  }
+  @media (max-width: 551px) {
+    .flag-text {
+      height: 60%;
+    }
+    .flag-text .title {
+      font-size: 2.2rem;
+    }
+    .flag-text .excerpt {
+      line-height: 30px;
+    }
+    .flag-text .read-more {
+      margin-top: 50px;
+      padding: 10px 30px;
+    }
+    .swiper-button-prev {
+      margin-left: 0;
+    }
+    .swiper-button-next {
+      margin-right: 0;
+    }
+    .default-excerpt {
+      margin-top: 1rem;
+    }
+  }
+
+
+/* video */
+.swiper-video {
+  width: 100%;
+  height: 100%;
+}
+.swiper-video video {
+  pointer-events: none;
+}
+.swiper-video-maskBox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  z-index: 1;
+}
+@media (min-width: 992px) {
+  
+    .swiper-video {
+      display: block;
+    }
+    .swiper-default-bgImg {
+      display: none;  
+    }
+  
+}
+@media (max-width: 992px) {
+  .swiper-video {
+    display: none;
+  }
+  .swiper-default-bgImg {
+    display: block;  
+  }
+}
+/* video-end */
 </style>
+<!-- 首页座右铭 -->
+
+<!-- 首页公告 -->
+
+<!-- 首页文章置顶 -->
 
 
-    
-    
-    <!-- 评论 -->
-    <!-- 评论 -->
 
-  <div id="myComment">
-    
-      
-<section id="comments" style="padding: 1em; margin: 15px auto;"
-	class="animated bounceInUp">
-	<div id="vcomment" class="comment"></div>
+
+<!-- hash算法 -->
+
+<div class="bg-floor" id="home-bg-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
+<section class="posts">
+  
+    <article class="post" data-aos="fade-up" style="flex-direction: row-reverse;   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <span class="post-time">2021-08-16</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/post/3.20-3.21%E5%9B%A2%E9%98%9F%E8%B5%9B/2021/">内部赛（3.20-3.21）</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              <!-- 文章详情页的标签 -->
+
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CTF/" rel="tag">CTF</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              <!-- 文章详情页的分类 -->
+
+
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            
+              
+              <a href="/post/3.20-3.21%E5%9B%A2%E9%98%9F%E8%B5%9B/2021/" class="lazyload" data-original="/medias/15.jpg" style="background-size: cover; 
+                background-position: center center;">
+              </a>
+            
+          </div>
+          <div class="post-content">
+            Crypoto1）签到题这个提示已经的很明显了**在图片的属性里边找到信息**   
+1lrgm&#123;Yzdeen&#125;
+题目上还说了古典密码，那就是凯撒或者栅栏
+1flag&#123;Stxyyh&#125;
+
+2）变形的猪圈
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/post/3.20-3.21%E5%9B%A2%E9%98%9F%E8%B5%9B/2021/">
+            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        
+          <a href="/post/3.20-3.21%E5%9B%A2%E9%98%9F%E8%B5%9B/2021/" class="lazyload" data-original="/medias/15.jpg" style="background-size: cover; 
+            background-position: center center;">
+          </a>
+        
+      </div>
+    </article>
+  
 </section>
-<style>
-	#comments {
-		background: rgba(255,255,255,0.9);
-	}
-	#veditor {
-		background-image: url('https://s1lu.github.io/img/%E8%AF%84%E8%AE%BA%E5%8C%BA%E8%A1%A8%E6%83%85.gif');
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-position: right;
-		background-color: rgba(255, 255, 255, 0);
-		resize: vertical;
-	}
-	#veditor:focus{
-		background-position-y: 200px;
-		transition: all 0.2s ease-in-out 0s;
-	}
-	#vcomment .vcards .vcard .vh .vhead .vtag.vvisitor {
-		background-color: #42b983;
-	}
-	.v[data-class=v] .vbtn:active, .v[data-class=v] .vbtn:hover {
-		color: #42b983;
-		border-color: #42b983;
-	}
-	#vcomment .vcards .vcard .vhead .vsys i {
-		display: none;
-	}
-	/* 底部valine链接 */
-	#vcomment .vpower {
-		display: none;
-	}
-	
-	/* 底下注释是修改 名称和邮箱和网址输入框的样式 */
-	/* #vcomment .vheader {
-		display: flex;
-		justify-content: space-around;
-	}
-	
-	#vcomment .vheader .vnick {
-		width: 31%;
-		border: 2px solid #dedede;
-		padding-left: 10px;
-		padding-right: 10px;
-		border-radius: 5px
-	}
+<!-- 翻页 -->
 
-	#vcomment .vheader .vmail {
-		width: 31%;
-		border: 2px solid #dedede;
-		padding-left: 10px;
-		padding-right: 10px;
-		border-radius: 5px
-	}
-
-	#vcomment .vheader .vlink {
-		width: 31%;
-		border: 2px solid #dedede;
-		padding-left: 10px;
-		padding-right: 10px;
-		border-radius: 5px
-	} */
-
-	img.vimg {
-		transition: all 1s;
-		/* 头像旋转时间为 1s */
-	}
-
-	img.vimg:hover {
-		transform: rotate(360deg);
-		-webkit-transform: rotate(360deg);
-		-moz-transform: rotate(360deg);
-		-o-transform: rotate(360deg);
-		-ms-transform: rotate(360deg);
-	}
-
-	#vcomment .vcards .vcard {
-		padding: 15px 20px 0 20px;
-		border-radius: 10px;
-		margin-bottom: 15px;
-		box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12);
-		transition: all .3s
-	}
-
-	#vcomment .vcards .vcard:hover {
-		box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12)
-	}
-
-	#vcomment .vcards .vcard .vh .vcard {
-		border: none;
-		box-shadow: none;
-	}
-</style>
+  <!-- <nav class="page-nav">
+    <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+  </nav> -->
+  <div class="page-nav">
+    
+      <a href="/"
+         class="page-nav-pre">
+         <i class="fa fa-angle-left"></i><span class="ml-5">上一页</span>
+      </a>
+    
+    <div class="page-info">
+        <div class="page-info-text">2 / 2</div>
+    </div>
     
   </div>
 
 
-  </div>
-
-  <!-- 目录 -->
-  <!-- 文章详情页右侧目录 -->
-
-  <div class="toc-aside">
-    <div class="toc-main">
-      <div class="toc-aside-title">
-        <i class="fa fa-list-ul" aria-hidden="true"></i><span>本文目录</span>
-        
-          <div class="toc-open-close">本文目录</div>
-        
-      </div>
-      <div class="toc-content">
-        <div class="toc"></div>
-      </div>
-    </div>
-  </div>
-  <!-- js在scripts目录下的的toc.ejs里面 -->
-  
-
-  <script>
-    function openBtnClickFn () {
-      let openOrCloseBtn = $('.toc-aside .toc-aside-title .toc-open-close');
-      let open = eval('' || 'true');
-      openOrCloseBtn.click(function() {
-        if (open === true) {
-          $(".toc-aside").css({'width': 0, 'padding': 0});
-          $(".toc-content").css({'width': 0});
-          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'none'});
-          $(".main-content").css({'width': '75%', 'margin': '10px auto'});
-          open = false;
-        } else {
-          $(".toc-aside").css({'width': '300px', 'padding': '0 10px'});
-          $(".toc-content").css({'width': '300px'});
-          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'inline-block'});
-          $(".main-content").css({'width': '65%', 'margin-right': '10px', 'margin-left': 'calc(35% - 350px)'});
-          open = true;
-        }
-      });
-    };
-    openBtnClickFn();
-    document.addEventListener('pjax:complete', function () {
-      openBtnClickFn();
-    })
-  </script>
-
+<!-- 花瓣和雪花飘落 -->
+<!-- 雪花和花瓣特效 -->
 
   
+    <script src="/js/falling/sakura.js"></script>
+  
 
-  <!-- 图片放大 Wrap images with fancybox support -->
-  <script src="/js/wrapImage.js"></script>
-</div>
 
-<!-- 文章详情页背景图 -->
-<div id="appBgSwiper" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;" :style="{'background-color': bgColor ? bgColor : 'transparent'}">
-    <transition-group tag="ul" :name="names">
-        <li v-for='(image,index) in img' :key='index' v-show="index === mark" class="bg-swiper-box">
-            <img :src="image" class="bg-swiper-img">
-        </li>
-    </transition-group>
-</div>
-<script>
-    var vm = new Vue({
-        el: '#appBgSwiper',
-        data: {
-            names: '' || 'fade' || 'fade', // translate-fade fade
-            mark: 0,
-            img: [],
-            bgColor: '',
-            time: null
-        },
-        methods: {   //添加方法
-            change(i, m) {
-                if (i > m) {
-                    // this.names = 'fade';
-                } else if (i < m) {
-                    // this.names = 'fade';
-                } else {
-                    return;
-                }
-                this.mark = i;
-            },
-            prev() {
-                // this.names = 'fade';
-                this.mark--;
-                if (this.mark === -1) {
-                    this.mark = 3;
-                    return
-                }
-            },
-            next() {
-                // this.names = 'fade';
-                this.mark++;
-                if (this.mark === this.img.length) {
-                    this.mark = 0;
-                    return
-                }
-            },
-            autoPlay() {
-                // this.names = 'fade';
-                this.mark++;
-                if (this.mark === this.img.length) {
-                    this.mark = 0;
-                    return
-                }
-            },
-            play() {
-                let bgImgDelay = '' || '60000'
-                let delay = parseInt(bgImgDelay) || 180000;
-                this.time = setInterval(this.autoPlay, delay);
-            },
-            enter() {
-                clearInterval(this.time);
-            },
-            leave() {
-                this.play();
-            }
-        },
-        created() {
-            this.play()
-        },
-        beforeDestroy() {
-            clearInterval(this.time);
-        },
-        mounted() {
-            let prop = ''|| 'https://s1lu.github.io/img/bgImg-%E6%B4%BE%E8%92%99.jpg,https://s1lu.github.io/img/666.jpg';
-            let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://') 
-            if (isImg) {
-                let img = prop.split(',');
-                let configRoot = '/'
-                let arrImg = [];
-                img.forEach(el => {
-                    var Expression=/http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
-			        var objExp = new RegExp(Expression);
 
-                    if(objExp.test(el)) {
-                        // http or https
-                        arrImg.push(el);
-                    } else {
-                        // 非http or https开头
-                        // 本地文件
-                        let firstStr = el.charAt(0);
-                        if (firstStr == '/') {
-                            el = el.substr(1); // 删除第一个字符 '/',因为 configRoot最后一个字符为 /
-                        }
-                        el = configRoot + el;
-                        arrImg.push(el);
-                    }
-                })
-                this.img = arrImg;
-            } else {
-                this.bgColor = prop;
-            }
-        }
-    })
-</script>
+<!-- 灯笼 -->
 
-<style>
-    .bg-swiper-box {
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-    .bg-swiper-img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-</style>
 
     </main>
 
