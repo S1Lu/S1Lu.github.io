@@ -659,11 +659,11 @@
       
         <div class="post-detail-header_wordcount">
           <span class="totalcount">
-            <i class="fa fa-file-text-o"></i> 字数统计: 711 |
+            <i class="fa fa-file-text-o"></i> 字数统计: 924 |
           </span>
   
           <span class="min2read">
-            <i class="fa fa-clock-o"></i> 阅读时长: 2分钟 |
+            <i class="fa fa-clock-o"></i> 阅读时长: 3分钟 |
           </span>
   
           
@@ -718,10 +718,10 @@
 
 <h4 id="④Linux磁盘分区与目录结构简介"><a href="#④Linux磁盘分区与目录结构简介" class="headerlink" title="④Linux磁盘分区与目录结构简介"></a>④Linux磁盘分区与目录结构简介</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">MBR：全称Master boot record，及硬盘的主引导记录。由三个部分组成，主引导程序（4446B）、硬盘分区表DPT（Disk Partition Table）（64B）、硬盘有效标志（2B）。</span><br><span class="line">硬盘分区类型：硬盘分区包括主分区，扩展分区，逻辑分区三种类型。</span><br><span class="line">主分区的数目最都有4个，在linux系统中，第一个逻辑分区编号始终为5</span><br></pre></td></tr></table></figure>
 
-<h4 id="⑤不同类型的磁盘和分区的设备文件命名有统一的规则。"><a href="#⑤不同类型的磁盘和分区的设备文件命名有统一的规则。" class="headerlink" title="⑤不同类型的磁盘和分区的设备文件命名有统一的规则。"></a>⑤不同类型的磁盘和分区的设备文件命名有统一的规则。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">IDE接口的硬盘设备表示为<span class="string">&quot;hdX&quot;</span>形式的文件名。SATA或SCSI接口的硬盘设备表示为<span class="string">&quot;sdX&quot;</span>形式文件名。其中“X”可以为a，b,c,d等字母序号。</span><br><span class="line">硬盘分区：安装linux是必须至少有两个分区：交换分区，（又称swap分区，1GB）和根分区（又称/分区,4GB）。</span><br></pre></td></tr></table></figure>
+<h4 id="⑤不同类型的磁盘和分区的设备文件命名有统一的规则。"><a href="#⑤不同类型的磁盘和分区的设备文件命名有统一的规则。" class="headerlink" title="⑤不同类型的磁盘和分区的设备文件命名有统一的规则。"></a>⑤不同类型的磁盘和分区的设备文件命名有统一的规则。</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">IDE接口的硬盘设备表示为<span class="string">&quot;hdX&quot;</span>形式的文件名。SATA或SCSI接口的硬盘设备表示为<span class="string">&quot;sdX&quot;</span>形式文件名。其中“X”可以为a，b,c,d等字母序号。</span><br><span class="line">硬盘分区：安装linux是必须至少有两个分区：交换分区，（又称swap分区，1GB）和根分区（又称/分区,4GB）。</span><br><span class="line"></span><br><span class="line">一个较合理的分区方案</span><br><span class="line">（1）/boot分区：系统引导，200MB，ext4文件系统</span><br><span class="line">（2）swap分区：交换分区，1GB，swap文件系统</span><br><span class="line">（3）/home分区：保存用户信息，512MB，ext4文件系统</span><br><span class="line">（4）/分区：保存其他所有数据；4GB，ext4文件系统。</span><br></pre></td></tr></table></figure>
 
 <h3 id="VMware安装-Centos7"><a href="#VMware安装-Centos7" class="headerlink" title="VMware安装 Centos7"></a>VMware安装 Centos7</h3><p>[VMware安装 Centos7]([<a target="_blank" rel="noopener" href="https://s1lu.github.io/post/VMware%E5%AE%89%E8%A3%85%20Centos7/2021/]">https://s1lu.github.io/post/VMware%E5%AE%89%E8%A3%85%20Centos7/2021/]</a>(<a target="_blank" rel="noopener" href="https://s1lu.github.io/post/VMware%E5%AE%89%E8%A3%85">https://s1lu.github.io/post/VMware安装</a> Centos7/2021/))</p>
-
+<h4 id="关机和重启命令"><a href="#关机和重启命令" class="headerlink" title="关机和重启命令"></a>关机和重启命令</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">1.关机：init 0   </span><br><span class="line">2.	shutdown -h now或shutdown -h 20:30</span><br><span class="line">3.	Poweroff</span><br><span class="line">4.	Halt</span><br><span class="line">重启：1.init 6</span><br><span class="line">2.	Reboot</span><br><span class="line">3.	Shutdown -r now</span><br><span class="line">注销命令：</span><br><span class="line">1.	Exit</span><br><span class="line">2.	[ctrl+D]组合键</span><br><span class="line">在虚拟控制台和图形用户界面之间的转换</span><br><span class="line">通过Ctrl-Alt-F[1-6](有Fn键加上Fn键）组合键在虚拟控制台之间切换</span><br><span class="line">通过Ctrl-Alt-F7组合键访问图形控制台</span><br><span class="line">root用户：特殊的管理账户，又称为超级用户，root几乎可以完全控制系统，而且几乎可以无限制地损坏系统。</span><br></pre></td></tr></table></figure>
       </div>
       <div class="post-tags-categories">
         
