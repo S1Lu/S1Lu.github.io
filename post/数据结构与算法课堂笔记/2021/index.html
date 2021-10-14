@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>S1Lu‘s world</title>
+  <title>数据与结构算法课堂笔记 | S1Lu‘s world</title>
 
   
     
@@ -623,1065 +623,533 @@
 
     <!-- 内容区域 -->
     <main class="main" id="pjax-container" style="margin-top: 0;">
-      <!-- 首页轮播 -->
-<link href="/js/swiper/swiper@5.4.1.min.css" rel="stylesheet">
+      
+ <!-- prismjs 代码高亮 -->
+ 
 
 
-  <link href="/js/vue-typed-js/index.css" rel="stylesheet">
+<div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -1;"></div>
+
+<!-- 文章详情页顶部图片和标题 -->
 
 
 
 
-
-
-<div class="swiper-length" style="display: none;">1</div>
-<div id="appSwiper"
-  class="swiper-no-swiping"
-  @mouseenter="stopAutoPlay()" 
-  @mouseleave="startAutoPlay()"
->
-  <swiper v-cloak ref="mySwiper" :options="swiperOptions" @slideChangeTransitionEnd="slideChangeTransitionEnd">
-    
-      
-        <swiper-slide>
-          <div class="item swiper-lazy" data-background="https://s1lu.github.io/img/YingHua.gif" style="background-size: 300000px; 
-            background-position: left center;" style="position: relative;">
-            <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-              <div class="flag">
-                
-                <div class="swiper-video">
-                  <video class="full-video" poster="https://img14.360buyimg.com/ddimg/jfs/t1/175057/18/19582/882056/60ee7ac8Ef0045710/202d2ad878684a3b.gif" autoplay loop muted style="width: 100%;height:100%;object-fit: cover;">
-                    <source style="width: 100%;height: 100vh;"  src="https://s1lu.github.io/img/beijing.mp4">
-                  </video>
-                  <div class="swiper-video-maskBox"></div>
-                </div>
-                
-                <div class="img-mask swiper-lazy swiper-default-bgImg" data-background="https://s1lu.github.io/img/YingHua.gif" style="height: 100%; background-size: cover; 
-                  background-position: center center;">
-                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>   
-                </div>
-                <div class="flag-text">
-                  <div class="flag-text-content">
-                    <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">S1Lu的小站</div>
-                    
-                      <div class="ani animated default-excerpt" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">
-                        <vue-typed-js :strings="defaultDesc" :loop="defaultDescTypedLoop" :type-speed="100" :back-speed="50">
-                          <h1 class="typing"></h1>
-                        </vue-typed-js>
-                      </div>
-                      
-                  </div>
-                  <div style="display: flex;" class="flag-text-btns">
-                    
-                      <div class="ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a href="/archives" class="read-more swiper-btn-color" style="display: inline-block; z-index:1;">阅读文档</a></div>
-                    
-                    
-                      <div class="ani animated" style="margin-left: 10px;" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a href="/tags" class="read-more swiper-btn-color2" style="display: inline-block; z-index:1;border: 1px solid white;">标签分类</a></div>
-                    
-                  </div>
-                </div>
-              </div>
-          </div>
-        </swiper-slide>
-      
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-          
-          <swiper-slide>
-            <div class="item swiper-lazy" data-background="/medias/1.jpg" style=" background-size: 300000px; 
-            background-position: left center;" style="position: relative;">
-              <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
-              <div class="flag" style="z-index: 2;">
-                <div class="img-mask swiper-lazy" data-background="/medias/1.jpg" style="height: 100%; background-size: cover; 
-                  background-position: center center;">
-                  <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>  
-                </div>
-                <div class="flag-text">
-                  <div class="flag-text-content">
-                    <div class="title ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">
-                      <a href="/post/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C%E5%85%A5%E9%97%A8/2021/">
-                        攻防世界 懵逼到此一游
-                      </a>
-                    </div>
-                    <div class="excerpt ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s">入门001flag直接给出
-1flag&#123;th1s_!s_a_d4m0_4la9&#125;
-
-
-002.pdf
-图下边神马都没有 是假的。打开 直接 ctr+v
-1flag&#123;security_through_obscur</div>
-                  </div>
-                  <div class="bottom-one-btn ani animated" swiper-animate-effect="fadeInDown" swiper-animate-duration="0.2s" swiper-animate-delay="0.1s"><a href="/post/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C%E5%85%A5%E9%97%A8/2021/" class="read-more swiper-btn-color" style="display: inline-block; z-index:1;">阅读更多</a></div>
-                </div>
-              </div>
-            </div>
-
-          </swiper-slide>
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-    <div class="swiper-pagination" slot="pagination" pointer style="display: none;"></div>
-    <div class="swiper-button-prev swiper-button-white" pointer slot="button-prev" style="display: none;"></div>
-    <div class="swiper-button-next swiper-button-white" pointer slot="button-next" style="display: none;"></div>
-    
-  </swiper>
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://s1lu.github.io/img/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.png---" style="background-repeat: no-repeat; background-size: cover; 
+  background-position: center center;position: relative;">
+  <div class="post-detail-header-mask"></div>
+  <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
-    <div id="scroll-down" @click="toPostContent()">
-      <a href="javascript:;">
-        <i class="fa fa-angle-down scroll-down-effects"></i>
-      </a>
+  <div class="post-detail-header_info-box">
+    <div class="title-box">
+      <span class="title">
+        数据与结构算法课堂笔记
+      </span>
     </div>
+    
+    
+      
+        <span class="post-detail-header_date">
+          <i class="fa fa-calendar"></i> 发表于：2021-09-02 |
+        </span>
+      
+
+      
+
+      
+        <div class="post-detail-header_wordcount">
+          <span class="totalcount">
+            <i class="fa fa-file-text-o"></i> 字数统计: 764 |
+          </span>
   
-  <canvas id="header_canvas"style="position:absolute;bottom:0;width:100%;pointer-events:none;"></canvas>
+          <span class="min2read">
+            <i class="fa fa-clock-o"></i> 阅读时长: 2分钟 |
+          </span>
+  
+          
+            <span class="reading">
+              <i class="fa fa-eye"></i> 阅读量：<span id="busuanzi_value_page_pv"></span>
+            </span>
+          
+        </div>
+      
+    
+  </div>
+  
+  
+    <script src="/js/bubble/bubble.js"></script>
+  
 </div>
 
-<script type="text/javascript">
-  Vue.use(window.VueAwesomeSwiper)
-</script>
+
+
+<div class="row justify-position">
+  <div class="main-content">
+    <article class="post post-detail">
+      
+      <div class="post-content">
+        <h1 id="数据与结构算法课堂笔记"><a href="#数据与结构算法课堂笔记" class="headerlink" title="数据与结构算法课堂笔记"></a>数据与结构算法课堂笔记</h1><h1 id="绪论（8月30日-2021）"><a href="#绪论（8月30日-2021）" class="headerlink" title="绪论（8月30日/2021）"></a>绪论（8月30日/2021）</h1><h3 id="1️⃣-数据项"><a href="#1️⃣-数据项" class="headerlink" title="1️⃣  数据项"></a>1️⃣  数据项</h3><p>用于描述数据元素，他是<strong>数据的最小单位</strong>。</p>
+<h3 id="2️⃣-数据元素"><a href="#2️⃣-数据元素" class="headerlink" title="2️⃣ 数据元素"></a>2️⃣ 数据元素</h3><p>是数据（集合）中的一个<strong>个体</strong>，他是数据的<strong>基本单位</strong>。</p>
+<h3 id="3️⃣-数据对象"><a href="#3️⃣-数据对象" class="headerlink" title="3️⃣ 数据对象"></a>3️⃣ 数据对象</h3><p>具有<strong>相同性质</strong>的若干个数据元素的<strong>集合。</strong></p>
+<h3 id="4️⃣-数据结构"><a href="#4️⃣-数据结构" class="headerlink" title="4️⃣ 数据结构"></a>4️⃣ 数据结构</h3><p>指<strong>带结构</strong>的元素的<strong>数据元素的集合</strong></p>
+<h3 id="5️⃣-元素之间的关系"><a href="#5️⃣-元素之间的关系" class="headerlink" title="5️⃣ 元素之间的关系"></a>5️⃣ 元素之间的关系</h3><p>相邻关系<strong>和</strong>不相邻关系**。</p>
+<h3 id="6️⃣-逻辑结构（面向用户）"><a href="#6️⃣-逻辑结构（面向用户）" class="headerlink" title="6️⃣ 逻辑结构（面向用户）"></a>6️⃣ 逻辑结构（面向用户）</h3><p>表格、二元组（表示为B=(D,R)D是数据元素的集合，R是数据关系集合）、图形</p>
+<h3 id="7️⃣-序偶"><a href="#7️⃣-序偶" class="headerlink" title="7️⃣ 序偶"></a>7️⃣ 序偶</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;x,y&gt;表示x,y是有向的，序偶(x,y)表示x,y是无向的                                                    序偶&lt;x,y&gt;  x为第一元素 y为第二元素 x为y的前驱元素 y为x的前驱元素 若某个元素没有前驱元素，则该元素被称为开始元素；若某个元素没有前驱元素，则该元素被称为终端元素</span><br></pre></td></tr></table></figure>
+
+<h3 id="8️⃣-存储结构（面向程序员）"><a href="#8️⃣-存储结构（面向程序员）" class="headerlink" title="8️⃣ 存储结构（面向程序员）"></a>8️⃣ 存储结构（面向程序员）</h3><h4 id="1）结构体数组-特点"><a href="#1）结构体数组-特点" class="headerlink" title="1）结构体数组 特点"></a>1）结构体数组 特点</h4><p>所有元素占用一整块内存空间  物理和逻辑相邻关系对应</p>
+<h4 id="2）链表-特点"><a href="#2）链表-特点" class="headerlink" title="2）链表 特点"></a>2）链表 特点</h4><p>一个逻辑元素用一个结点存储，每个结点单独分配，所有结点的地址不一定是连续的   用指针来表示逻辑关系</p>
+<h3 id="9️⃣-同一逻辑结构可以对应多种存储结构"><a href="#9️⃣-同一逻辑结构可以对应多种存储结构" class="headerlink" title="9️⃣ 同一逻辑结构可以对应多种存储结构"></a>9️⃣ 同一逻辑结构可以对应多种存储结构</h3><p>  同样的运算，在不同的存储结构中，其实现过程是不同的</p>
+<h3 id="1️⃣0️⃣-逻辑结构类型"><a href="#1️⃣0️⃣-逻辑结构类型" class="headerlink" title="1️⃣0️⃣ 逻辑结构类型"></a>1️⃣0️⃣ 逻辑结构类型</h3><h4 id="1）集合"><a href="#1）集合" class="headerlink" title="1）集合"></a>1）集合</h4><p> 元素之间关系:无</p>
+<h4 id="2）线性结构"><a href="#2）线性结构" class="headerlink" title="2）线性结构"></a>2）线性结构</h4><p>元素之间关系:一对一</p>
+<h4 id="3）树形结构"><a href="#3）树形结构" class="headerlink" title="3）树形结构"></a>3）树形结构</h4><p> 元素之间关系:一对多</p>
+<h4 id="4）图形结构"><a href="#4）图形结构" class="headerlink" title="4）图形结构"></a>4）图形结构</h4><p>元素之间关系:多对多</p>
+<h3 id="1️⃣1️⃣-存储结构类型"><a href="#1️⃣1️⃣-存储结构类型" class="headerlink" title="1️⃣1️⃣ 存储结构类型"></a>1️⃣1️⃣ 存储结构类型</h3><h4 id="1）顺序存储结构的特点"><a href="#1）顺序存储结构的特点" class="headerlink" title="1）顺序存储结构的特点"></a>1）顺序存储结构的特点</h4><p>所有元素占用一整块内存空间，逻辑上相邻的元素物理上也相邻。</p>
+<h4 id="2）链式存储结构的特点"><a href="#2）链式存储结构的特点" class="headerlink" title="2）链式存储结构的特点"></a>2）链式存储结构的特点</h4><p>一个逻辑元素，用一个节点存储，每个节点单独分配，所有节点的地址不一定是连续的，用指针来表示逻辑关系。</p>
+<h4 id="3）索引存储结构"><a href="#3）索引存储结构" class="headerlink" title="3）索引存储结构"></a>3）索引存储结构</h4><h4 id="4）哈希存储结构"><a href="#4）哈希存储结构" class="headerlink" title="4）哈希存储结构"></a>4）哈希存储结构</h4><p>1、 算法：通常把基于存储结构的运算实现的步骤或过程称为算法。<br>（1）算法的五个重要的特性<br>有穷性（2）确定性（3）可行性（4）有输入（5）有输出<br>2、 一个算法是由控制结构（顺序、分支、循环）和原操作（指固有数据类型的操作，如+、-、<em>、/等）构成的。算法的执行时间取决于两者的综合效果。<br>3、 算法所有原操作的执行次数（也称为频度），他是问题规模n的函数，用T(N)表示。<br>算法执行时间大致=原操作所需要的时间</em>T（n)。所以T(N）与算法的执行时间成正比。为此用T（n)表示算法的执行时间。<br>4、 </p>
+
+      </div>
+      <div class="post-tags-categories">
+        
+        <div class="tags">
+          
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E4%B8%8E%E7%BB%93%E6%9E%84%E7%AE%97%E6%B3%95/" class="">
+              数据与结构算法
+            </a>
+          
+        </div>
+        
+      </div>
+      
+        <div class="copyright">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+    <strong>作者:  </strong>S1Lu</a>
+    </li>
+    <li class="post-copyright-link">
+    <strong>文章链接:  </strong>
+    <a href="//post/数据结构与算法课堂笔记/2021/" target="_blank" title="数据与结构算法课堂笔记">http://example.com//post/数据结构与算法课堂笔记/2021/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明:   </strong>
+      本网站所有文章除特别声明外,均采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">CC BY-NC-ND 4.0</a>
+      许可协议。转载请注明出处!
+    </li>
+  </ul>
+<div>
+      
+    </article>
+    <!-- 上一篇文章和下一篇文章 -->
+    
+      <!-- 文章详情页的上一页和下一页 -->
+<div class="post-nav">
+
+
+
+
+
+  
+  <div class="post-nav-next post-nav-item">
+    <div class="post-nav-img lazyload" data-original="https://s1lu.github.io/img/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8.png" style="background-size: cover; 
+      background-position: center center;">
+    </div>
+    <a href="/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/2021/" class="post-nav-link">
+      <div class="title">
+        下一篇: <i class="fa fa-angle-right"></i>
+        <div class="title-text">数据库原理与应用</div>
+      </div>
+      <!-- <div class="content">
+        数据库原理与应用绪论1）数据(Data)1数据库中存储的基本对象
+
+①特点1数据与其语义是不可分的(数据的含义称为数据的
+      </div> -->
+    </a>
+  </div>
+
+</div>
+
+    
+    
+
+    <!-- 打赏 -->
+    
+      <div id="appDonate" class="post-donate">
+  <div id="donate_board" class="donate_bar center" ref="donate">
+    <a id="btn_donate" class="btn_donate" href="javascript:;" title="打赏" @click="showDialogDrawer()"></a>
+  </div>
+  <transition name="fade">
+    <div 
+      class="donate-box-mask"
+      v-cloak 
+      v-if="visible"
+      @click="cancelDialogDrawer()"
+    >
+    </div>
+  </transition>
+  <transition name="bounce">
+    <div class="donate-box" v-cloak v-if="visible">
+      <div class="donate-box_close">
+        <i class="fa fa-times" aria-hidden="true" @click="cancelDialogDrawer" pointer></i>
+      </div>
+      <div class="donate-box_title">
+        <h4>
+          你的赏识是我前进的动力
+        </h4>
+      </div>
+      <div class="donate-box_tab">
+        <div class="Alipay" pointer :class="{'active': tabActive === 'Alipay'}" @click="changeTabActive('Alipay')">
+          支付宝
+        </div>
+        <div class="WeChatpay" pointer :class="{'active': tabActive === 'WeChatpay'}" @click="changeTabActive('WeChatpay')">
+          微信
+        </div>
+      </div>
+      <div class="donate-box_img">
+        <div class="AlipayImg" v-if="tabActive === 'Alipay'">
+          <img src="/medias/zfb.jpg" alt="支付宝打赏" />
+        </div> 
+        <div class="WeChatpayImg" v-if="tabActive === 'WeChatpay'">
+          <img src="/medias/wx.jpg" alt="微信打赏" />
+        </div>
+      </div>
+    </div>
+  </transition>
+</div>
 
 <script>
-  var autoplay = JSON.parse('false');
-  var delay = '5000';
-  var loop = JSON.parse('true') ? false : JSON.parse('true');
-  var effect = 'slide';
-  var swiperLength = parseInt(document.querySelector(".swiper-length").innerText);
-  var defaultDesc = '你若盛开，清风自来。心若浮沉，淡笑安然。|Heart if ups and downs，smile Enron';
-  defaultDesc = defaultDesc.split(',');
-  var defaultDescTypedLoop = JSON.parse('true');
+  var body = document.body || document.documentElement || window;
   var vm = new Vue({
-    el: '#appSwiper',
+    el: '#appDonate',
     data: {
-      defaultDesc: defaultDesc,
-      defaultDescTypedLoop,
-      swiperOptions: {
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true // 允许点击小圆点跳转
-        },
-        loop: loop ? true : false,
-        effect, // fade
-        autoplay: (autoplay && swiperLength > 1) ? {
-  　　　　delay,
-  　　　　disableOnInteraction: false // 手动切换之后继续自动轮播
-    　　} : false,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        lazy: {
-          loadPrevNext: true,
-        },
-        on:{
-          init: function() {
-            swiperAnimateCache(this); //隐藏动画元素 
-            swiperAnimate(this); //初始化完成开始动画
-          }, 
-          slideChangeTransitionEnd: function(){ 
-            swiperAnimate(this); //每个slide切换结束时也运行当前slide动画
-          } 
-        }
-        // Some Swiper option/callback...
-      }
+      visible: false,
+      tabActive: 'Alipay',
+      top: 0,
     },
     computed: {
-      swiper() {
-        return this.$refs.mySwiper.$swiper
-      }
     },
     mounted() {
-      // console.log('Current Swiper instance object', this.swiper)
-      // this.swiper.slideTo(0, 1000, false)
     },
     methods: {
-      stopAutoPlay() {
-        (autoplay && swiperLength > 1) && this.swiper.autoplay.stop();
+      showDialogDrawer() {
+        this.visible = true;
+        // 防止页面滚动，只能让弹框滚动
+        // function getScroll() {
+        //   return {
+        //     left: window.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft || 0,
+        //     top: window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0
+        //   };
+        // }
+        this.top = $(document).scrollTop() // or getScroll().top
+        // console.log('aa', $('.main-content'));
+        body.style.cssText = 'overflow: hidden;';
       },
-      startAutoPlay() {
-        (autoplay && swiperLength > 1) && this.swiper.autoplay.start();
+      cancelDialogDrawer() {
+        this.visible = false;
+        body.removeAttribute('style');
+        $(document).scrollTop(this.top)
       },
-      slideChangeTransitionEnd() {
-        console.log('1');
-      },
-      toPostContent() {
-        const fullHeight = $(window).height() - 60;
-        $('html,body').animate({scrollTop: fullHeight},500);
+      changeTabActive(name) {
+        this.tabActive = name;
       }
     },
     created() {}
   })
 </script>
+    
 
-  <script src="/js/bubble/homeBubble.js"></script>
+    <!-- 分享 -->
+    
+      <!-- https://github.com/overtrue/share.js -->
+<!-- 文章详情页的分享 -->
+<div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+
+<script src="/js/shareJs/social-share.min.js"></script>
+</script>
 
 <style>
-#appSwiper {
-  position: relative;
-  user-select: none;
-}
-.default-excerpt {
-  font-size: 1.6rem;
-  margin-top: 1rem;
-  font-family: Titillium Web,'PingFang SC','Hiragino Sans GB','Microsoft JhengHei','Microsoft YaHei',sans-serif;
-}
-.bottom-one-btn {
-  margin-top: 15px;
-}
-.swiper-container {
-  overflow: hidden;
-  z-index: 0;
-}
-.swiper-slide {
-  height: 350px;
-  position: relative;
-}
-.swiper-button-prev,
-.swiper-button-next {
-  padding: 10px 10px;
-  transition: background 0.2s;
-}
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
-.swiper-slide .item {
-  width: 100%;
-  height: 100%;
-}
-.flag {
-  position: relative;
-  width: 60%;
-  margin: 0 auto;
-  color: #ffffff;
-  height: 100%;
-  background: #000;
-}
-.flag img {
-  min-height: 100%;
-}
-.flag-text {
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  width: 80%;
-  height: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  z-index: 9999;
-}
-.flag-text .title {
-  font-size: 1.8rem;
-  font-family: Long Cang,cursive;
-}
-.flag-text .title a {
-  color: #fff;
-  transition: color 0.3s;
-}
-.flag-text .title a:hover {
-  color: #200700;
-}
-.flag-text .excerpt {
-  color: #eee;
-  font-family: Ubuntu,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-  width: 70%;
-  line-height: 30px;
-  height: 150px;
-  margin-top: 2%;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
-  overflow: hidden;
-}
-.swiper-pagination-bullet-active {
-  opacity: 1;
-  background-color: #42b983;
-}
-.img-mask {
-  opacity:0.6; filter: alpha(opacity=60);
-}
-.flag-text .read-more {
-  margin-bottom: 30px;
-  padding: 5px 15px;
-  color: #ffffff;
-  border-radius: 20px;
-}
-#scroll-down {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 2.5rem;
-  color: #fff;
-  cursor: pointer;
-  z-index: 2;
-}
-#scroll-down a {
-  color: #fff;
-}
-@-webkit-keyframes rightan
-  {
-  
-  0%
-  {
-    transform: translateY(0);
-    opacity: 0.5;
+  .social-share {
+    margin: 20px 0;
   }
-  50% {
-    transform: translateY(-30px);
-    opacity: 1;
-  }
-  100%
-  {
-    transform: translateY(0);
-    opacity: 0.5;
-  }
-}
-.scroll-down-effects {
-  animation: rightan 1.5s infinite;
-}
-/* 当头部导航设置为背景透明的时候 */
-
-  .swiper-slide {
-    height: 400px;
-  }
-  .flag-text {
-    top: 80px;
-  }
-
-
-@media (min-width: 992px) {
-  .swiper-button-prev {
-    margin-left: 20%;
-    transform: translateX(-180%);
-  }
-  .swiper-button-next {
-    margin-right: 20%;
-    transform: translateX(180%);
-  }
-  .flag-text .title {
-    width: 80%;
-    line-height: 35px;
-    max-height: 70px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-  }
-}
-@media (max-width: 992px) {
-  .flag {
-    width: 100%;
-  }
-  .flag-text .title {
-    font-size: 1.5rem;
-    margin-top: 50px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-  }
-  .flag-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 100%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-  }
-  .flag-text .excerpt {
-    width: 100%;
-    line-height: 25px;
-    height: 125px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
-    overflow: hidden;
-  }
-  .flag-text .read-more {
-    margin-bottom: 80px;
-  }
-}
-@media (max-width: 992px) and (min-width: 551px) {
-  .flag-text .excerpt {
-    width: 70%;
-  }
-}
-@media (max-width: 551px) {
-  .swiper-slide {
-    height: 250px;
-  }
-  .flag-text .title {
-    line-height: 30px;
-    max-height: 60px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
-    overflow: hidden;
-    margin-top: 20px;
-  }
-  .flag-text .excerpt {
-    font-size: 1rem;
-    line-height: 20px;
-    height: 80px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-  }
-  .flag-text .excerpt { 
-    margin-top: 10px;
-  }
-  .flag-text .read-more {
-    margin-top: 10px;
-    margin-bottom: 50px;
-  }
-  .swiper-button-prev,
-  .swiper-button-next {
-    transform: scale(0.5);
-  }
-  .swiper-button-prev {
-    left: 0;
-  }
-  .swiper-button-next {
-    right: 0;
-  }
-}
-/* 当头部导航设置为背景透明的时候 */
-
-  @media (max-width: 992px) {
-    .flag-text {
-      top: 60px;
-      height: 80%;
-    }
-  }
-  @media (max-width: 551px) {
-    .swiper-slide {
-      height: 310px;
-    }
-  }
-
-
-/* 文字或者按钮居中显示 */
-
-  .flag-text {
-    left: 10%;
-  }
-  .flag-text .flag-text-content {
-    width: 100%;
-    text-align: center;
-  }
-  .flag-text .title {
-    width: 100%;
-    text-align: center;
-  }
-  .flag-text .excerpt { 
-    width: 100%;
-    text-align: center;
-  }
-  .bottom-one-btn {
-    display: flex;
-    justify-content: center;
-  }
-  .default-excerpt {
-    display: flex;
-    justify-content: center;
-    font-size: 1.6rem;
-    font-family: Titillium Web,'PingFang SC','Hiragino Sans GB','Microsoft JhengHei','Microsoft YaHei',sans-serif;
-  }
-  .flag-text-btns {
-    justify-content: center;
-  }
-  @media (min-width: 992px) {
-    .flag-text .excerpt {
-      line-height: 30px;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 5;
-      overflow: hidden;
-    }
-  }
-  @media (max-width: 992px) {
-    .flag-text {
-      margin-left: 0;
-      transform: translateX(0);
-    }
-  }
-
-
-
-
-/* 全屏显示 */
-
-  .flag {
-    width: 100%;
-  }
-  .swiper-slide {
-    height: calc(100vh - 60px);
-    
-      height: 100vh;
-    
-  }
-  .flag-text {
-    top: 50%;
-    left: 15%;
-    transform: translateY(-50%);
-    width: 70%;
-    height: auto;
-  }
-  .flag-text .title {
-    font-size: 2.8rem;
-    line-height: 1.5em;
-    max-height: none;
-    /* overflow: visible; */
-  }
-  .flag-text .excerpt {
-    font-size: 1.25rem;
-    height: 150px;
-  }
-  .flag-text .read-more {
-    margin-top: 10px;
-  }
-  .swiper-button-prev,
-  .swiper-button-next {
-    margin-top: -60px!important;
-  }
-  .swiper-btn-color,
-  .swiper-btn-color2 {
-    background-color: transparent;
-    border: 1px solid #fff;
-  }
-  .swiper-btn-color:hover,
-  .swiper-btn-color2:hover {
-    background-color: #200700;
-    border: 1px solid #200700!important;
-  }
-  .flag-text-btns {
-    justify-content: center;
-  }
-  .swiper-button-prev {
-    margin-left: 10px;
-    transform: translateX(0);
-    border-radius: 50%;
-    padding: 0;
-    width: 50px;
-    height: 50px;
-  }
-  .swiper-button-next {
-    margin-right: 10px;
-    transform: translateX(0);
-    border-radius: 50%;
-    padding: 0;
-    width: 50px;
-    height: 50px;
-  }
-  .swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 1.2rem;
-  }
-  @media (min-width: 992px) {
-    .flag-text .excerpt {
-      line-height: 35px;
-      height: 175px;
-    }
-    .default-excerpt {
-      min-height: 150px;
-    }
-    .typed-element {
-      align-items: unset;
-    }
-  }
-  @media (max-width: 992px) {
-    .flag-text {
-      margin-left: 0;
-      height: 60%;
-      top: 55%;
-    }
-    .flag-text .title {
-      font-size: 2.4rem;
-      margin-top: 0;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2;
-      overflow: hidden;
-    }
-    .flag-text .excerpt {
-      line-height: 35px;
-      height: 185px;
-    }
-    .flag-text .read-more {
-      margin-top: 20px;
-    }
-  }
-  @media (max-width: 551px) {
-    .flag-text {
-      height: 60%;
-    }
-    .flag-text .title {
-      font-size: 2.2rem;
-    }
-    .flag-text .excerpt {
-      line-height: 30px;
-    }
-    .flag-text .read-more {
-      margin-top: 50px;
-      padding: 10px 30px;
-    }
-    .swiper-button-prev {
-      margin-left: 0;
-    }
-    .swiper-button-next {
-      margin-right: 0;
-    }
-    .default-excerpt {
-      margin-top: 1rem;
-    }
-  }
-
-
-/* video */
-.swiper-video {
-  width: 100%;
-  height: 100%;
-}
-.swiper-video video {
-  pointer-events: none;
-}
-.swiper-video-maskBox{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #000;
-  opacity: 0.2;
-  z-index: 1;
-}
-@media (min-width: 992px) {
-  
-    .swiper-video {
-      display: block;
-    }
-    .swiper-default-bgImg {
-      display: none;  
-    }
-  
-}
-@media (max-width: 992px) {
-  .swiper-video {
-    display: none;
-  }
-  .swiper-default-bgImg {
-    display: block;  
-  }
-}
-/* video-end */
 </style>
-<!-- 首页座右铭 -->
-
-<!-- 首页公告 -->
-
-<!-- 首页文章置顶 -->
 
 
+    
+    
+    <!-- 评论 -->
+    <!-- 评论 -->
 
-
-<!-- hash算法 -->
-
-<div class="bg-floor" id="home-bg-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
-<section class="posts">
-  
-    <article class="post" data-aos="fade-up" style="flex-direction: row-reverse;   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span class="post-time">2021-08-16</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/post/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAHexo+GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2/2021/">搭建一个hexo+GitHub博客</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%B0%8F%E9%BB%91%E5%B1%8B%E6%8C%96%E5%AE%9D/" rel="tag">小黑屋挖宝</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            
-              
-              <a href="/post/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAHexo+GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2/2021/" class="lazyload" data-original="/medias/4.jpg" style="background-size: cover; 
-                background-position: center center;">
-              </a>
-            
-          </div>
-          <div class="post-content">
-            <p>新新补充：目录设置。<br>新补充：电脑更换系统或更换电脑博客的重新部署，由于电脑原因我重现下了系统。</p>
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/post/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAHexo+GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2/2021/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        
-          <a href="/post/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAHexo+GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2/2021/" class="lazyload" data-original="/medias/4.jpg" style="background-size: cover; 
-            background-position: center center;">
-          </a>
-        
-      </div>
-    </article>
-  
-    <article class="post" data-aos="fade-up" style="   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span class="post-time">2021-08-16</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/post/GetFile/2021/">GetFiles</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/" rel="tag">test</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            
-              
-              <a href="/post/GetFile/2021/" class="lazyload" data-original="/medias/12.jpg" style="background-size: cover; 
-                background-position: center center;">
-              </a>
-            
-          </div>
-          <div class="post-content">
-            房间空调开放
-    .aspect-ratio {
-        position: relative;
-        width: 100%;
-        height: 40vh;
-        padding-bottom
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/post/GetFile/2021/">
-            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        
-          <a href="/post/GetFile/2021/" class="lazyload" data-original="/medias/12.jpg" style="background-size: cover; 
-            background-position: center center;">
-          </a>
-        
-      </div>
-    </article>
-  
-    <article class="post" data-aos="fade-up" style="flex-direction: row-reverse;   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span class="post-time">2021-08-16</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/post/Python%E8%AF%AD%E6%B3%95%201%EF%BC%89/2021/">python语法 1）</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/" rel="tag">python</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            
-              
-              <a href="/post/Python%E8%AF%AD%E6%B3%95%201%EF%BC%89/2021/" class="lazyload" data-original="/medias/2.jpg" style="background-size: cover; 
-                background-position: center center;">
-              </a>
-            
-          </div>
-          <div class="post-content">
-            缩进：python中的缩进是用来只是代码块如果省略缩进则会报错，空格数取决于自己（在一个代码块中必须使用数目一样的空格）注释：# 开头（单行注释）“””   “”” 三引号开始三引号结尾(多行注释)创建变量：python中创建变量没有声明变
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/post/Python%E8%AF%AD%E6%B3%95%201%EF%BC%89/2021/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        
-          <a href="/post/Python%E8%AF%AD%E6%B3%95%201%EF%BC%89/2021/" class="lazyload" data-original="/medias/2.jpg" style="background-size: cover; 
-            background-position: center center;">
-          </a>
-        
-      </div>
-    </article>
-  
-    <article class="post" data-aos="fade-up" style="   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span class="post-time">2021-08-16</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/post/hello-world/2021/">hello ，world！</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%BF%83%E8%8B%A5%E6%B5%AE%E6%B2%89%EF%BC%8C%E6%B7%A1%E7%AC%91%E5%AE%89%E7%84%B6%E3%80%82/" rel="tag">心若浮沉，淡笑安然。</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            
-              
-              <a href="/post/hello-world/2021/" class="lazyload" data-original="/medias/10.jpg" style="background-size: cover; 
-                background-position: center center;">
-              </a>
-            
-          </div>
-          <div class="post-content">
-            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/post/hello-world/2021/">
-            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        
-          <a href="/post/hello-world/2021/" class="lazyload" data-original="/medias/10.jpg" style="background-size: cover; 
-            background-position: center center;">
-          </a>
-        
-      </div>
-    </article>
-  
-    <article class="post" data-aos="fade-up" style="flex-direction: row-reverse;   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span class="post-time">2021-08-16</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/post/buuctf%E6%96%B0%E6%89%8B%E9%A2%98/2021/">buuctf新手题</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CTF/" rel="tag">CTF</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            
-              
-              <a href="/post/buuctf%E6%96%B0%E6%89%8B%E9%A2%98/2021/" class="lazyload" data-original="/medias/9.jpg" style="background-size: cover; 
-                background-position: center center;">
-              </a>
-            
-          </div>
-          <div class="post-content">
-            Crypto1）篱笆墙的影子星星还是那颗星星哟 月亮还是那个月亮 山也还是那座山哟 梁也还是那道梁 碾子是碾子 缸是缸哟 爹是爹来娘是娘 麻油灯呵还吱吱响 点的还是那么丁点亮 哦哦 注意：得到的 flag 请包上 flag{} 提交
-1fe
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/post/buuctf%E6%96%B0%E6%89%8B%E9%A2%98/2021/">
-            <i class="iconfont iconmore" pointer style="float: right;  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        
-          <a href="/post/buuctf%E6%96%B0%E6%89%8B%E9%A2%98/2021/" class="lazyload" data-original="/medias/9.jpg" style="background-size: cover; 
-            background-position: center center;">
-          </a>
-        
-      </div>
-    </article>
-  
-    <article class="post" data-aos="fade-up" style="   ">
-      <div class="post-main">
-        <div class="post-info">
-          <div class="post-time">
-            <i class="fa fa-clock-o" aria-hidden="true"></i>
-            <span class="post-time">2021-08-16</span>
-          </div>
-          <div class="post-title">
-            <a class="post-title-link" href="/post/3.20-3.21%E5%9B%A2%E9%98%9F%E8%B5%9B/2021/">内部赛（3.20-3.21）</a>
-          </div>
-          <div class="post-meta">
-            <div class="post-tags">
-              <!-- 文章详情页的标签 -->
-
-    <i class="iconfont icontag"></i>
-    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CTF/" rel="tag">CTF</a></li></ul>
-
-            </div>
-            <div class="post-categories">
-              <!-- 文章详情页的分类 -->
-
-
-            </div>
-          </div>
-          <div class="post-img-mobile">
-            
-              
-              <a href="/post/3.20-3.21%E5%9B%A2%E9%98%9F%E8%B5%9B/2021/" class="lazyload" data-original="/medias/15.jpg" style="background-size: cover; 
-                background-position: center center;">
-              </a>
-            
-          </div>
-          <div class="post-content">
-            Crypoto1）签到题这个提示已经的很明显了**在图片的属性里边找到信息**   
-1lrgm&#123;Yzdeen&#125;
-题目上还说了古典密码，那就是凯撒或者栅栏
-1flag&#123;Stxyyh&#125;
-
-2）变形的猪圈
-          </div>
-        </div>
-        <div class="post-more">
-          <a href="/post/3.20-3.21%E5%9B%A2%E9%98%9F%E8%B5%9B/2021/">
-            <i class="iconfont iconmore" pointer style="  " title="阅读更多"></i>
-          </a>
-        </div>
-      </div>
-      <div class="post-img">
-        
-          <a href="/post/3.20-3.21%E5%9B%A2%E9%98%9F%E8%B5%9B/2021/" class="lazyload" data-original="/medias/15.jpg" style="background-size: cover; 
-            background-position: center center;">
-          </a>
-        
-      </div>
-    </article>
-  
+  <div id="myComment">
+    
+      
+<section id="comments" style="padding: 1em; margin: 15px auto;"
+	class="animated bounceInUp">
+	<div id="vcomment" class="comment"></div>
 </section>
-<!-- 翻页 -->
+<style>
+	#comments {
+		background: rgba(255,255,255,0.9);
+	}
+	#veditor {
+		background-image: url('https://s1lu.github.io/img/%E8%AF%84%E8%AE%BA%E5%8C%BA%E8%A1%A8%E6%83%85.gif');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: right;
+		background-color: rgba(255, 255, 255, 0);
+		resize: vertical;
+	}
+	#veditor:focus{
+		background-position-y: 200px;
+		transition: all 0.2s ease-in-out 0s;
+	}
+	#vcomment .vcards .vcard .vh .vhead .vtag.vvisitor {
+		background-color: #42b983;
+	}
+	.v[data-class=v] .vbtn:active, .v[data-class=v] .vbtn:hover {
+		color: #42b983;
+		border-color: #42b983;
+	}
+	#vcomment .vcards .vcard .vhead .vsys i {
+		display: none;
+	}
+	/* 底部valine链接 */
+	#vcomment .vpower {
+		display: none;
+	}
+	
+	/* 底下注释是修改 名称和邮箱和网址输入框的样式 */
+	/* #vcomment .vheader {
+		display: flex;
+		justify-content: space-around;
+	}
+	
+	#vcomment .vheader .vnick {
+		width: 31%;
+		border: 2px solid #dedede;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 5px
+	}
 
-  <!-- <nav class="page-nav">
-    <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-  </nav> -->
-  <div class="page-nav">
-    
-      <a href="/"
-         class="page-nav-pre">
-         <i class="fa fa-angle-left"></i><span class="ml-5">上一页</span>
-      </a>
-    
-    <div class="page-info">
-        <div class="page-info-text">2 / 2</div>
-    </div>
+	#vcomment .vheader .vmail {
+		width: 31%;
+		border: 2px solid #dedede;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 5px
+	}
+
+	#vcomment .vheader .vlink {
+		width: 31%;
+		border: 2px solid #dedede;
+		padding-left: 10px;
+		padding-right: 10px;
+		border-radius: 5px
+	} */
+
+	img.vimg {
+		transition: all 1s;
+		/* 头像旋转时间为 1s */
+	}
+
+	img.vimg:hover {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+	}
+
+	#vcomment .vcards .vcard {
+		padding: 15px 20px 0 20px;
+		border-radius: 10px;
+		margin-bottom: 15px;
+		box-shadow: 0 0 4px 1px rgba(0, 0, 0, .12);
+		transition: all .3s
+	}
+
+	#vcomment .vcards .vcard:hover {
+		box-shadow: 0 0 8px 3px rgba(0, 0, 0, .12)
+	}
+
+	#vcomment .vcards .vcard .vh .vcard {
+		border: none;
+		box-shadow: none;
+	}
+</style>
     
   </div>
 
 
-<!-- 花瓣和雪花飘落 -->
-<!-- 雪花和花瓣特效 -->
+  </div>
+
+  <!-- 目录 -->
+  <!-- 文章详情页右侧目录 -->
+
+  <div class="toc-aside">
+    <div class="toc-main">
+      <div class="toc-aside-title">
+        <i class="fa fa-list-ul" aria-hidden="true"></i><span>本文目录</span>
+        
+          <div class="toc-open-close">本文目录</div>
+        
+      </div>
+      <div class="toc-content">
+        <div class="toc"></div>
+      </div>
+    </div>
+  </div>
+  <!-- js在scripts目录下的的toc.ejs里面 -->
+  
+
+  <script>
+    function openBtnClickFn () {
+      let openOrCloseBtn = $('.toc-aside .toc-aside-title .toc-open-close');
+      let open = eval('' || 'true');
+      openOrCloseBtn.click(function() {
+        if (open === true) {
+          $(".toc-aside").css({'width': 0, 'padding': 0});
+          $(".toc-content").css({'width': 0});
+          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'none'});
+          $(".main-content").css({'width': '75%', 'margin': '10px auto'});
+          open = false;
+        } else {
+          $(".toc-aside").css({'width': '300px', 'padding': '0 10px'});
+          $(".toc-content").css({'width': '300px'});
+          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'inline-block'});
+          $(".main-content").css({'width': '65%', 'margin-right': '10px', 'margin-left': 'calc(35% - 350px)'});
+          open = true;
+        }
+      });
+    };
+    openBtnClickFn();
+    document.addEventListener('pjax:complete', function () {
+      openBtnClickFn();
+    })
+  </script>
+
 
   
-    <script src="/js/falling/sakura.js"></script>
-  
 
+  <!-- 图片放大 Wrap images with fancybox support -->
+  <script src="/js/wrapImage.js"></script>
+</div>
 
+<!-- 文章详情页背景图 -->
+<div id="appBgSwiper" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;" :style="{'background-color': bgColor ? bgColor : 'transparent'}">
+    <transition-group tag="ul" :name="names">
+        <li v-for='(image,index) in img' :key='index' v-show="index === mark" class="bg-swiper-box">
+            <img :src="image" class="bg-swiper-img">
+        </li>
+    </transition-group>
+</div>
+<script>
+    var vm = new Vue({
+        el: '#appBgSwiper',
+        data: {
+            names: '' || 'fade' || 'fade', // translate-fade fade
+            mark: 0,
+            img: [],
+            bgColor: '',
+            time: null
+        },
+        methods: {   //添加方法
+            change(i, m) {
+                if (i > m) {
+                    // this.names = 'fade';
+                } else if (i < m) {
+                    // this.names = 'fade';
+                } else {
+                    return;
+                }
+                this.mark = i;
+            },
+            prev() {
+                // this.names = 'fade';
+                this.mark--;
+                if (this.mark === -1) {
+                    this.mark = 3;
+                    return
+                }
+            },
+            next() {
+                // this.names = 'fade';
+                this.mark++;
+                if (this.mark === this.img.length) {
+                    this.mark = 0;
+                    return
+                }
+            },
+            autoPlay() {
+                // this.names = 'fade';
+                this.mark++;
+                if (this.mark === this.img.length) {
+                    this.mark = 0;
+                    return
+                }
+            },
+            play() {
+                let bgImgDelay = '' || '60000'
+                let delay = parseInt(bgImgDelay) || 180000;
+                this.time = setInterval(this.autoPlay, delay);
+            },
+            enter() {
+                clearInterval(this.time);
+            },
+            leave() {
+                this.play();
+            }
+        },
+        created() {
+            this.play()
+        },
+        beforeDestroy() {
+            clearInterval(this.time);
+        },
+        mounted() {
+            let prop = ''|| 'https://s1lu.github.io/img/bgImg-%E6%B4%BE%E8%92%99.jpg,https://s1lu.github.io/img/666.jpg';
+            let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg') || prop.includes('http://') || prop.includes('https://') 
+            if (isImg) {
+                let img = prop.split(',');
+                let configRoot = '/'
+                let arrImg = [];
+                img.forEach(el => {
+                    var Expression=/http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+			        var objExp = new RegExp(Expression);
 
-<!-- 灯笼 -->
+                    if(objExp.test(el)) {
+                        // http or https
+                        arrImg.push(el);
+                    } else {
+                        // 非http or https开头
+                        // 本地文件
+                        let firstStr = el.charAt(0);
+                        if (firstStr == '/') {
+                            el = el.substr(1); // 删除第一个字符 '/',因为 configRoot最后一个字符为 /
+                        }
+                        el = configRoot + el;
+                        arrImg.push(el);
+                    }
+                })
+                this.img = arrImg;
+            } else {
+                this.bgColor = prop;
+            }
+        }
+    })
+</script>
 
+<style>
+    .bg-swiper-box {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .bg-swiper-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+</style>
 
     </main>
 
