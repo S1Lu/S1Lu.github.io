@@ -1,0 +1,82 @@
+<div class="footer bg-color">
+  <div class="footer-main">
+    <div class="link">
+      <% (theme.site_footer.social||[]).forEach(function(value) { %>
+        <% if (value.url && (value.icon || value.img || value.avatar)) { %>
+          <a href="<%= url_for(value.url) %>" class="social">
+            <% if (value.icon) { %>
+              <i class="<%- value.icon %>" aria-hidden="true"></i>
+            <% } else if (value.img) { %>
+              <img src="<%- value.img %>"/>
+            <% } else if (value.avatar) { %>
+              <img src="<%- value.avatar %>" style="border-radius:120px"/>
+            <% } %>
+          </a>
+        <% } %>
+      <% }) %>
+
+<!--时间-->
+<br /><br />
+<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span> <script language="javascript"> 
+
+  var now = new Date();
+ 
+  function createtime(){
+   var grt= new Date("01/08/2021 00:00:00");/*---这里是网站的启用时间--*/
+ 
+   now.setTime(now.getTime()+250);
+ 
+   days = (now - grt ) / 1000 / 60 / 60 / 24;
+ 
+   dnum = Math.floor(days);
+ 
+   hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+ 
+   hnum = Math.floor(hours);
+ 
+   if(String(hnum).length ==1 ){hnum = "0" + hnum;}
+ 
+   minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+ 
+   mnum = Math.floor(minutes);
+ 
+   if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+ 
+   seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+ 
+   snum = Math.round(seconds);
+ 
+   if(String(snum).length ==1 ){snum = "0" + snum;}
+ 
+   document.getElementById("timeDate").innerHTML = "苟延残喘了"+dnum+"天";
+ 
+   document.getElementById("times").innerHTML = hnum + "小时" + mnum + "分" + snum + "秒";
+ 
+  }
+  setInterval("createtime()",250); 
+ 
+ </script> 
+
+
+                
+<!-- 爱心 -->
+<i id="heartbeat" class="fa fas fa-heartbeat"></i>    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HCLonely/images@master/others/heartbeat.min.css">
+
+    </div>
+
+
+    <div class="footer-copyright">
+      <%- markdown(theme.site_footer.copyright) %>
+    </div>
+    <div class="footer-custom">
+      <% (theme.site_footer.custom||[]).forEach(function(item) { %>
+        <div><%- markdown(item.label) %></div>
+      <% }) %>
+    </div>
+    <!-- 不蒜子统计 -->
+    <% if(theme.busuanzi.on === true ) { %>
+      <%- partial('_partial/footer/busuanzi') %>
+    <% } %>
+  </div>
+</div>
