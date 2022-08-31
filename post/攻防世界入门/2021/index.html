@@ -736,7 +736,7 @@
       
         <div class="post-detail-header_wordcount">
           <span class="totalcount">
-            <i class="fas fa-file-text-o"></i> 字数统计: 910 |
+            <i class="fas fa-file-text-o"></i> 字数统计: 912 |
           </span>
   
           <span class="min2read">
@@ -804,7 +804,7 @@
 <p>喷血（一天天的不干正事），既然是java程序肯定是要得到 他的源码了，用JD-GUI打开<br><img src="https://img-blog.csdnimg.cn/20210328221237148.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210328221237148.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="在这里插入图片描述"></p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;RGFqaURhbGlfSmlud2FuQ2hpamk=&#125;</span><br></pre></td></tr></table></figure>
 <p><img src="https://img-blog.csdnimg.cn/2021032822131972.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/2021032822131972.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="在这里插入图片描述"></p>
-<p>看他{}里的东西就知道还没结束，“=” —&gt;base64</p>
+<p>看他{}里的东西就知道还没结束，“&#x3D;” —&gt;base64</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">flag&#123;DajiDali_JinwanChiji&#125;</span><br></pre></td></tr></table></figure>
 
 
@@ -818,13 +818,13 @@
 
 <h2 id="007-掀桌子"><a href="#007-掀桌子" class="headerlink" title="007.掀桌子"></a>007.掀桌子</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c8e9aca0c6f2e5f3e8c4efe7a1a0d4e8e5a0e6ece1e7a0e9f3baa0e8eafae3f9e4eafae2eae4e3eaebfaebe3f5e7e9f3e4e3e8eaf9eaf3e2e4e6f2</span><br></pre></td></tr></table></figure>
 
-<p>正确思路：看他数据类型是0-9、a-f也就是十六进制，那就是要进制转换，然后转ASCII码。<br>（看到没不会敲代码多麻烦。。。。）转化成十进制后发现数字都大于ASCII码，是因为两位十六进制数对应码应该有 16*16=256个码与之对应，而ASCII码有0-256个，前128个为常用的字符如运算符,字母 ,数字等 键盘上可以显示的，后 128个为 特殊字符是键盘上找不到的字符，所以还要减去128再转化成ASCII码。<br><img src="https://img-blog.csdnimg.cn/20210328221443354.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210328221443354.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="在这里插入图片描述"></p>
+<p>正确思路：看他数据类型是0-9、a-f也就是十六进制，那就是要进制转换，然后转ASCII码。<br>（看到没不会敲代码多麻烦。。。。）转化成十进制后发现数字都大于ASCII码，是因为两位十六进制数对应码应该有 16*16&#x3D;256个码与之对应，而ASCII码有0-256个，前128个为常用的字符如运算符,字母 ,数字等 键盘上可以显示的，后 128个为 特殊字符是键盘上找不到的字符，所以还要减去128再转化成ASCII码。<br><img src="https://img-blog.csdnimg.cn/20210328221443354.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210328221443354.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="在这里插入图片描述"></p>
 <p><img src="https://img-blog.csdnimg.cn/20210328221448929.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210328221448929.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzUxNjQ0NjIz,size_16,color_FFFFFF,t_70" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="在这里插入图片描述"></p>
 <p>转为ASCII码</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Hi, FreshDog! The flag is: hjzcydjzbjdcjkzkcugisdchjyjsbdfr</span><br><span class="line">flag&#123;hjzcydjzbjdcjkzkcugisdchjyjsbdfr&#125;</span><br></pre></td></tr></table></figure>
 
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">大佬的java：</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Misc_07</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		String hex=<span class="string">&quot;c8e9aca0c6f2e5f3e8c4efe7a1a0d4e8e5a0e6ece1e7a0e9f3baa0e8eafae3f9e4eafae2eae4e3eaebfaebe3f5e7e9f3e4e3e8eaf9eaf3e2e4e6f2&quot;</span>;</span><br><span class="line">		String temp=<span class="string">&quot;&quot;</span>;</span><br><span class="line">		String flag=<span class="string">&quot;&quot;</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; hex.length(); i+=<span class="number">2</span>) &#123;</span><br><span class="line">		temp=hex.substring(i, i+<span class="number">2</span>);<span class="comment">//获取相邻的字符</span></span><br><span class="line">			<span class="keyword">long</span> dec=Long.parseLong(temp,<span class="number">16</span>);<span class="comment">//将两两字符转换为十进制</span></span><br><span class="line">			flag=Long.toString(dec-<span class="number">128</span>);<span class="comment">//将long型的十进制值减去128，再转换为String</span></span><br><span class="line">			System.out.print((<span class="keyword">char</span>)Integer.parseInt(flag));<span class="comment">//解析flag为十进制整数，并强制转换为char,获取字符</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">大佬的java：</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Misc_07</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">		String hex=<span class="string">&quot;c8e9aca0c6f2e5f3e8c4efe7a1a0d4e8e5a0e6ece1e7a0e9f3baa0e8eafae3f9e4eafae2eae4e3eaebfaebe3f5e7e9f3e4e3e8eaf9eaf3e2e4e6f2&quot;</span>;</span><br><span class="line">		String temp=<span class="string">&quot;&quot;</span>;</span><br><span class="line">		String flag=<span class="string">&quot;&quot;</span>;</span><br><span class="line">		<span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; hex.length(); i+=<span class="number">2</span>) &#123;</span><br><span class="line">		temp=hex.substring(i, i+<span class="number">2</span>);<span class="comment">//获取相邻的字符</span></span><br><span class="line">			<span class="type">long</span> dec=Long.parseLong(temp,<span class="number">16</span>);<span class="comment">//将两两字符转换为十进制</span></span><br><span class="line">			flag=Long.toString(dec-<span class="number">128</span>);<span class="comment">//将long型的十进制值减去128，再转换为String</span></span><br><span class="line">			System.out.print((<span class="type">char</span>)Integer.parseInt(flag));<span class="comment">//解析flag为十进制整数，并强制转换为char,获取字符</span></span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="008-ext3"><a href="#008-ext3" class="headerlink" title="008.ext3"></a>008.ext3</h2><p>下载后先用<br><img src="https://img-blog.csdnimg.cn/20210328221535558.png" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210328221535558.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="在这里插入图片描述"></p>
 <p>打开搜索flag<br><img src="https://img-blog.csdnimg.cn/20210328221540312.png" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/20210328221540312.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="在这里插入图片描述"></p>
@@ -903,18 +903,17 @@
   <div class="post-nav-prev post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="/medias/4.jpg" class="lazyload placeholder" data-srcset="/medias/4.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
+      <img class="lazyload lazyload placeholder" src="/medias/10.jpg" class="lazyload placeholder" data-srcset="/medias/10.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="">
     </div>
-    <a href="/post/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAHexo+GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2/2021/" class="post-nav-link">
+    <a href="/post/%E2%9B%B3%E5%AF%B9%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E7%AE%80%E5%8D%95%E8%AE%A4%E8%AF%86!/2021/" class="post-nav-link">
       <div class="title">
         <i class="fas fa-angle-left"></i> 上一篇:
-        <div class="title-text">搭建一个hexo+GitHub博客</div>
+        <div class="title-text">⛳数据库的简单操作!</div>
       </div>
       
       <!-- <div class="content">
-        新新补充：目录设置。新补充：电脑更换系统或更换电脑博客的重新部署，由于电脑原因我重现下了系统。
-
-一：搭建前的环境准备（
+        &#96;&#96;
+1️⃣数据库基本概念    12345数据库：信息存储的仓库，包括一系列的关系措施！表:一个数据库
       </div> -->
     </a>
   </div>
@@ -925,15 +924,17 @@
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://s1lu.github.io/img/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8.png" class="lazyload placeholder" data-srcset="https://s1lu.github.io/img/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="/medias/4.jpg" class="lazyload placeholder" data-srcset="/medias/4.jpg" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" src="" alt="">
     </div>
-    <a href="/post/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8%EF%BC%882021-08-30%EF%BC%89/2021/" class="post-nav-link">
+    <a href="/post/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AAHexo+GitHub%E7%9A%84%E5%8D%9A%E5%AE%A2/2021/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fas fa-angle-right"></i>
-        <div class="title-text">数据库原理与应用</div>
+        <div class="title-text">搭建一个hexo+GitHub博客</div>
       </div>
       <!-- <div class="content">
-        数据库原理与应用数据结构：线性表数组链表栈队列树多路查找树二叉树堆其他散列表散列函数冲突解决动态扩容位图图等等算法递归、
+        新新补充：目录设置。新补充：电脑更换系统或更换电脑博客的重新部署，由于电脑原因我重现下了系统。
+
+一：搭建前的环境准备（
       </div> -->
     </a>
   </div>
