@@ -84,7 +84,7 @@
         
     
 
-<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="S1Lu的小站" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="S1Lu的小站" type="application/atom+xml">
 </head>
 
   
@@ -770,7 +770,7 @@
         <h1 id="一、计算分析题"><a href="#一、计算分析题" class="headerlink" title="一、计算分析题"></a>一、计算分析题</h1><h2 id="1-MAC帧"><a href="#1-MAC帧" class="headerlink" title="1.MAC帧"></a>1.MAC帧</h2><blockquote>
 <p>通过IEEE802.3局域网发送ASCII码数据“Staystrongwuhan”,若封装成一个MAC帧，请问该帧的数据字段有效字节是多少？需要填充多少个字节？</p>
 </blockquote>
-<div class="note success"><p>正确答案 因为MAC帧最小数据长度为64字节，MAC帧头占18个字节,故数据长度必须大于46个字节,如不够则进行填充。所以: <br>(1)数据帧的数据字段有效字节是15字节</br> (2)需要填充的字节数为46-15&#x3D;31(字节) 15字节；填充31字节。</p></div>
+<div class="note success"><p>正确答案 因为MAC帧最小数据长度为64字节，MAC帧头占18个字节,故数据长度必须大于46个字节,如不够则进行填充。所以: <br>(1)数据帧的数据字段有效字节是15字节</br> (2)需要填充的字节数为46-15=31(字节) 15字节；填充31字节。</p></div>
 
 <h2 id="2-Tracert命令（跟踪路由）"><a href="#2-Tracert命令（跟踪路由）" class="headerlink" title="2.Tracert命令（跟踪路由）"></a>2.Tracert命令（跟踪路由）</h2><blockquote>
 <p>下图是使用tracert命令跟踪路由的输出结果，仔细阅读下图，回答下面问题。<br> <img src="https://img-blog.csdnimg.cn/7a7d30d3563d4770be8ab3b840f2e6b8.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/7a7d30d3563d4770be8ab3b840f2e6b8.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg"><br>（1）tracert命令的功能是什么，使用了什么协议？<br>（2）主机<a href="http://www.sohu.com的IP地址是什么？">www.sohu.com的IP地址是什么？</a></p>
@@ -779,10 +779,10 @@
 
 
 <h2 id="3-网络问题分析"><a href="#3-网络问题分析" class="headerlink" title="3.网络问题分析"></a>3.网络问题分析</h2><blockquote>
-<p>某网络如图所示，路由器Router局域网接口IP地址为202.196.8.161&#x2F;27，主机PC0、笔记本PC1的网络配置如图中所示。主机PC0、笔记本PC1均不能正常访问因特网，而连接到交换机Switch上的其它主机访问因特网均没有问题。请分析可能的原因，并提出相应的解决办法。</p>
+<p>某网络如图所示，路由器Router局域网接口IP地址为202.196.8.161/27，主机PC0、笔记本PC1的网络配置如图中所示。主机PC0、笔记本PC1均不能正常访问因特网，而连接到交换机Switch上的其它主机访问因特网均没有问题。请分析可能的原因，并提出相应的解决办法。</p>
 </blockquote>
 <p><img src="https://img-blog.csdnimg.cn/43590a3018a84938ad5dcd54d5fb97c5.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/43590a3018a84938ad5dcd54d5fb97c5.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="S1Lu"></p>
-<div class="note success"><p>正确答案 由于连接到交换机Switch上的其它主机访问因特网均没有问题，所以不是路由的配置错误， 然后对这两个主机进行网络配置分析。 路由器局域网接口地址为：202.196.8.161&#x2F;27，因此：该网络的子网掩码为：255.255.255.224（1110 0000）IP地址范围：202.196.8.160-202.196.8.191。 然后：202.196.8.160做网络号 202.196.8.191做广播号 202.196.8.161被路由占用 所以可用IP地址为202.196.8.162-202.196.8.190 主机pc01的IP地址、子网掩码、网关配置有误； 笔记本pC02的IP地址、子网掩码配置有误； 正确配置： <img src="https://img-blog.csdnimg.cn/978d9e08a9184070bc1d90e5d0251621.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/978d9e08a9184070bc1d90e5d0251621.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="表"> 正确配置：</p></div>
+<div class="note success"><p>正确答案 由于连接到交换机Switch上的其它主机访问因特网均没有问题，所以不是路由的配置错误， 然后对这两个主机进行网络配置分析。 路由器局域网接口地址为：202.196.8.161/27，因此：该网络的子网掩码为：255.255.255.224（1110 0000）IP地址范围：202.196.8.160-202.196.8.191。 然后：202.196.8.160做网络号 202.196.8.191做广播号 202.196.8.161被路由占用 所以可用IP地址为202.196.8.162-202.196.8.190 主机pc01的IP地址、子网掩码、网关配置有误； 笔记本pC02的IP地址、子网掩码配置有误； 正确配置： <img src="https://img-blog.csdnimg.cn/978d9e08a9184070bc1d90e5d0251621.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/978d9e08a9184070bc1d90e5d0251621.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="表"> 正确配置：</p></div>
 
 <table>
 <thead>
@@ -818,19 +818,19 @@
 <div class="note success"><p>正确答案 发送端：只要发现5个连续1，则立即填入一个0</p></div>
 
 <h2 id="6-集线器独享带宽，交换机共享带宽"><a href="#6-集线器独享带宽，交换机共享带宽" class="headerlink" title="6.集线器独享带宽，交换机共享带宽"></a>6.集线器独享带宽，交换机共享带宽</h2><blockquote>
-<p>有10个站连接到以太网上，试计算以下三种情况每一个站所能得到的带宽。<br>（1）10个站都连接到一个10Mbit&#x2F;s的以太网集线器；<br>（2）10个站都连接到一个100Mbit&#x2F;s的以太网集线器；<br>（3）10个站都连接到一个10Mbit&#x2F;s的以太网交换机。</p>
+<p>有10个站连接到以太网上，试计算以下三种情况每一个站所能得到的带宽。<br>（1）10个站都连接到一个10Mbit/s的以太网集线器；<br>（2）10个站都连接到一个100Mbit/s的以太网集线器；<br>（3）10个站都连接到一个10Mbit/s的以太网交换机。</p>
 </blockquote>
-<div class="note success"><p>正确答案 <br>（1）1Mbit&#x2F;s <br>（2）10Mbit&#x2F;s <br>（3）10Mbit&#x2F;s</p></div>
+<div class="note success"><p>正确答案 <br>（1）1Mbit/s <br>（2）10Mbit/s <br>（3）10Mbit/s</p></div>
 
 <h2 id="7-CRC校验（循环冗余校验，模2运算相同为0不同为1）"><a href="#7-CRC校验（循环冗余校验，模2运算相同为0不同为1）" class="headerlink" title="7.CRC校验（循环冗余校验，模2运算相同为0不同为1）"></a>7.CRC校验（循环冗余校验，模2运算相同为0不同为1）</h2><blockquote>
-<p>传输数据时采用CRC校验方式，生成多项式P(X)&#x3D;x^3 +  x^2 + 1，现在发送端待发送的数据为101001。试完成以下各题：<br>（1）发送端进行校验时的被除数和除数的二进制序列分别是多少？<br>（2）计算出的余数的二进制序列是多少？请给出计算过程。<br>（3）校验后，发送端发送的含校验码的数据的二进制序列是多少？</p>
+<p>传输数据时采用CRC校验方式，生成多项式P(X)=x^3 +  x^2 + 1，现在发送端待发送的数据为101001。试完成以下各题：<br>（1）发送端进行校验时的被除数和除数的二进制序列分别是多少？<br>（2）计算出的余数的二进制序列是多少？请给出计算过程。<br>（3）校验后，发送端发送的含校验码的数据的二进制序列是多少？</p>
 </blockquote>
-<div class="note success"><p>正确答案 由<strong>多项式</strong>是可知<strong>除数</strong>是<strong>1101</strong>，然后n&#x3D;除数位数-1&#x3D;4-1&#x3D;3，所以<strong>余数位数为n-1位</strong>，在<strong>数据后边补上n-1个0做被除数</strong>，<strong>被除数</strong>是<strong>101001000</strong> <br>（1）发送端被除数是101001000，除数是1101 <br>（2）余数是001<img src="https://img-blog.csdnimg.cn/4621900ee27b46d0918f420af6f56715.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/4621900ee27b46d0918f420af6f56715.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="余数运算"> <br>（3）<strong>发送数据就是把被除数的后边补上的0用余数替换</strong> 发送数据为101001001</p></div>
+<div class="note success"><p>正确答案 由<strong>多项式</strong>是可知<strong>除数</strong>是<strong>1101</strong>，然后n=除数位数-1=4-1=3，所以<strong>余数位数为n-1位</strong>，在<strong>数据后边补上n-1个0做被除数</strong>，<strong>被除数</strong>是<strong>101001000</strong> <br>（1）发送端被除数是101001000，除数是1101 <br>（2）余数是001<img src="https://img-blog.csdnimg.cn/4621900ee27b46d0918f420af6f56715.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/4621900ee27b46d0918f420af6f56715.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="余数运算"> <br>（3）<strong>发送数据就是把被除数的后边补上的0用余数替换</strong> 发送数据为101001001</p></div>
 
 
 
 <h2 id="8-ping命令（Windows下默认ping包次数为4次，ping包大小为32Byte）"><a href="#8-ping命令（Windows下默认ping包次数为4次，ping包大小为32Byte）" class="headerlink" title="8.ping命令（Windows下默认ping包次数为4次，ping包大小为32Byte）"></a>8.ping命令（Windows下默认ping包次数为4次，ping包大小为32Byte）</h2><blockquote>
-<p>假设某次IP链路测试ping命令的结果如下：<br>C:&gt; ping     （参数）     145.5.20.17<br>Pinging 145.5.20.17 with 210 bytes of data：<br>Reply from 145.5.20.17: bytes&#x3D;210 time&#x3D;30ms TTL&#x3D;56<br>Request timed out.<br>Reply from 145.5.20.17: bytes&#x3D;210 time&#x3D;20ms TTL&#x3D;56<br>Request timed out.<br>Request timed out.<br>Ping statistics for 145.5.20.17: Packets: Sent &#x3D; 5, Received &#x3D; 2, Lost &#x3D; 3 (60% loss), Approximate round trip times in milli-seconds: Minimum &#x3D; 20ms, Maximum &#x3D; 30ms, Average &#x3D; 25ms<br>请回答以下问题：<br>（1）此次ping命令后的参数是什么？<br>（2）该测试发送了几个数据包？<br>（3）每个数据包大小为多少个字节？<br>（4）有几个数据包发送成功？<br>（5）数据平均往返时间是多少ms？</p>
+<p>假设某次IP链路测试ping命令的结果如下：<br>C:&gt; ping     （参数）     145.5.20.17<br>Pinging 145.5.20.17 with 210 bytes of data：<br>Reply from 145.5.20.17: bytes=210 time=30ms TTL=56<br>Request timed out.<br>Reply from 145.5.20.17: bytes=210 time=20ms TTL=56<br>Request timed out.<br>Request timed out.<br>Ping statistics for 145.5.20.17: Packets: Sent = 5, Received = 2, Lost = 3 (60% loss), Approximate round trip times in milli-seconds: Minimum = 20ms, Maximum = 30ms, Average = 25ms<br>请回答以下问题：<br>（1）此次ping命令后的参数是什么？<br>（2）该测试发送了几个数据包？<br>（3）每个数据包大小为多少个字节？<br>（4）有几个数据包发送成功？<br>（5）数据平均往返时间是多少ms？</p>
 </blockquote>
 <div class="note success"><p>这个是windows下默认的ping命令 <img src="https://img-blog.csdnimg.cn/6df13c366bd74d71a5813edc9b3c2164.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/6df13c366bd74d71a5813edc9b3c2164.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="默认的ping命令"> 观察发现题上一共发了5个包，然后包的长度也不一样 正确答案 <br>（1）此次ping命令后的参数是-n 5 –l 210 <br>（2）该测试发送了5个数据包（2分） <br>（3）每个数据包大小为210个字节 <br>（4）有2个数据包发送成功 <br>（5）数据平均往返时间是25ms</p></div>
 
@@ -887,9 +887,9 @@
 
 
 <h2 id="11-传播时延"><a href="#11-传播时延" class="headerlink" title="11.传播时延"></a>11.传播时延</h2><blockquote>
-<p>月球到地球的距离大约为3.8×10^5 km，在它们之间架设一条200kbps的点到点链路，信号传播速率为光速（3.0×10^5 km&#x2F;s），将一副照片从月球传回地球所需时间为501.3s。求这幅照片的大小（单位MB，保留1位小数）。</p>
+<p>月球到地球的距离大约为3.8×10^5 km，在它们之间架设一条200kbps的点到点链路，信号传播速率为光速（3.0×10^5 km/s），将一副照片从月球传回地球所需时间为501.3s。求这幅照片的大小（单位MB，保留1位小数）。</p>
 </blockquote>
-<div class="note success"><p>正确答案 <br>传播时延：（3.8×10^5 km）÷（3.0×10^5 km&#x2F;s）&#x3D; 1.3s <br>发送端发送时延：501.3-1.3 &#x3D; 500s <br>照片大小：（200kbps×500s）÷8 &#x3D; 12500KB &#x3D; 12.2MB</p></div>
+<div class="note success"><p>正确答案 <br>传播时延：（3.8×10^5 km）÷（3.0×10^5 km/s）= 1.3s <br>发送端发送时延：501.3-1.3 = 500s <br>照片大小：（200kbps×500s）÷8 = 12500KB = 12.2MB</p></div>
 
 
 
@@ -907,9 +907,9 @@
 
 
 <h2 id="13-传播时延"><a href="#13-传播时延" class="headerlink" title="13.传播时延"></a>13.传播时延</h2><blockquote>
-<p>时延、速率、利用率等是衡量计算机网络性能的重要指标，通信过程中，分组交换和电路交换是常用的数据交换方式，试分析并计算下题：如下图所示的网络中，采用“存储-转发”方式的分组交换网络中，所有链路的数据传输率为100Mb&#x2F;s，分组大小为1000B，其中分组头部大小为20B，若主机H1向主机H2发送一个大小为980000B的文件，则在不考虑分组拆装时间和传播时延的情况下，从H1发送开始到H2接收完为止，需要的时间至少为多久？<br><img src="https://img-blog.csdnimg.cn/f910f308922143d0b8692615c93be11f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/f910f308922143d0b8692615c93be11f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="H1向H2发送数据"></p>
+<p>时延、速率、利用率等是衡量计算机网络性能的重要指标，通信过程中，分组交换和电路交换是常用的数据交换方式，试分析并计算下题：如下图所示的网络中，采用“存储-转发”方式的分组交换网络中，所有链路的数据传输率为100Mb/s，分组大小为1000B，其中分组头部大小为20B，若主机H1向主机H2发送一个大小为980000B的文件，则在不考虑分组拆装时间和传播时延的情况下，从H1发送开始到H2接收完为止，需要的时间至少为多久？<br><img src="https://img-blog.csdnimg.cn/f910f308922143d0b8692615c93be11f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" class="lazyload placeholder" data-srcset="https://img-blog.csdnimg.cn/f910f308922143d0b8692615c93be11f.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_UzFMdQ==,size_20,color_FFFFFF,t_70,g_se,x_16" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" alt="H1向H2发送数据"></p>
 </blockquote>
- <div class="note success"><p>正确答案 <br>由题设可知，分组携带的数据长度为980B，文件长度为980000B，需要拆分为1000个分组，加上头部之后，每个分组大小为1000B，总共需要传送的数据量大小为1MB； <br>数据传输速率为100Mb&#x2F;s，因此当t&#x3D;1M*8&#x2F;100Mbps &#x3D; 80ms时，H1发送完最后一个比特； <br>由于所有链路的数据传输速率相同，因此文件传输经过最短路径时所需时间最少，即最后一个分组经过2个中间结点设备的转发，每次转发的时间为 t0 &#x3D; 1K×8&#x2F;100Mbps &#x3D; 0.08ms； <br> 所以，在不考虑分组拆装时间和传播延时的情况下，当t &#x3D; 80ms + 2t0 &#x3D; 80.16ms时，H2接受完文件，即所需的时间至少为80.16ms。</p></div>
+ <div class="note success"><p>正确答案 <br>由题设可知，分组携带的数据长度为980B，文件长度为980000B，需要拆分为1000个分组，加上头部之后，每个分组大小为1000B，总共需要传送的数据量大小为1MB； <br>数据传输速率为100Mb/s，因此当t=1M*8/100Mbps = 80ms时，H1发送完最后一个比特； <br>由于所有链路的数据传输速率相同，因此文件传输经过最短路径时所需时间最少，即最后一个分组经过2个中间结点设备的转发，每次转发的时间为 t0 = 1K×8/100Mbps = 0.08ms； <br> 所以，在不考虑分组拆装时间和传播延时的情况下，当t = 80ms + 2t0 = 80.16ms时，H2接受完文件，即所需的时间至少为80.16ms。</p></div>
 
 
 
@@ -989,16 +989,16 @@ act
   <div class="post-nav-next post-nav-item">
     <div class="post-nav-img" style="background-size: cover; 
       background-position: center center;">
-      <img class="lazyload lazyload placeholder" src="https://s1lu.github.io/img/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.png---" class="lazyload placeholder" data-srcset="https://s1lu.github.io/img/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.png---" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" src="" alt="">
+      <img class="lazyload lazyload placeholder" src="https://s1lu.github.io/img/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.png" class="lazyload placeholder" data-srcset="https://s1lu.github.io/img/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95.png" srcset="https://img2.baidu.com/it/u=2037979560,2772131037&fm=26&fmt=auto&gp=0.jpg" src="" alt="">
     </div>
-    <a href="/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E8%AF%BE%E5%A0%82%E7%AC%94%E8%AE%B0/2021/" class="post-nav-link">
+    <a href="/post/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/2021/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fas fa-angle-right"></i>
-        <div class="title-text">数据与结构算法课堂笔记</div>
+        <div class="title-text">数据结构与算法课堂笔记</div>
       </div>
       <!-- <div class="content">
-        数据与结构算法课堂笔记绪论（8月30日&#x2F;2021）1️⃣  数据项用于描述数据元素，他是数据的最小单位。
-2️
+        数据结构与算法课堂笔记绪论（8月30日/2021）1️⃣  数据项用于描述数据元素，他是数据的最小单位。
+2️⃣ 数据元
       </div> -->
     </a>
   </div>

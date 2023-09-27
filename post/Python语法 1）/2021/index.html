@@ -84,7 +84,7 @@
         
     
 
-<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="S1Lu的小站" type="application/atom+xml">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="S1Lu的小站" type="application/atom+xml">
 </head>
 
   
@@ -804,22 +804,22 @@
 <ul>
 <li>在函数外部创建变量</li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="string">&quot;azhui&quot;</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">myfunc</span>():</span><br><span class="line">  <span class="built_in">print</span>(x)</span><br><span class="line">myfunc()</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="string">&quot;azhui&quot;</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">myfunc</span>():</span></span><br><span class="line">  <span class="built_in">print</span>(x)</span><br><span class="line">myfunc()</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>在函数内部创建全局变量，使用global关键字</li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">myfunc</span>():</span><br><span class="line">  <span class="keyword">global</span> x</span><br><span class="line">  x = <span class="string">&quot;silu&quot;</span></span><br><span class="line">myfunc()</span><br><span class="line"><span class="built_in">print</span>(x)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">myfunc</span>():</span></span><br><span class="line">  <span class="keyword">global</span> x</span><br><span class="line">  x = <span class="string">&quot;silu&quot;</span></span><br><span class="line">myfunc()</span><br><span class="line"><span class="built_in">print</span>(x)</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>如果在函数内部创建与全局变量相同的名称的变量，该变量为局部变量，并且只能在函数内部使用，相同名称变量的全局变量将保留原样，并且拥有原始值</li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="string">&quot;silu&quot;</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">myfunc</span>():</span><br><span class="line">  x = <span class="string">&quot;azhi&quot;</span></span><br><span class="line">  <span class="built_in">print</span>(x)</span><br><span class="line">myfunc()</span><br><span class="line"><span class="built_in">print</span>(x)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="string">&quot;silu&quot;</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">myfunc</span>():</span></span><br><span class="line">  x = <span class="string">&quot;azhi&quot;</span></span><br><span class="line">  <span class="built_in">print</span>(x)</span><br><span class="line">myfunc()</span><br><span class="line"><span class="built_in">print</span>(x)</span><br></pre></td></tr></table></figure>
 
 <ul>
 <li>在函数内部更改全局变量的值，使用 global  关键字</li>
 </ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="string">&quot;silu&quot;</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">myfunc</span>():</span><br><span class="line">  <span class="keyword">global</span> x</span><br><span class="line">  x = <span class="string">&quot;azhi&quot;</span></span><br><span class="line">myfunc()</span><br><span class="line"><span class="built_in">print</span>(x)</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="string">&quot;silu&quot;</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">myfunc</span>():</span></span><br><span class="line">  <span class="keyword">global</span> x</span><br><span class="line">  x = <span class="string">&quot;azhi&quot;</span></span><br><span class="line">myfunc()</span><br><span class="line"><span class="built_in">print</span>(x)</span><br></pre></td></tr></table></figure>
 
 <p><strong>内置数据类型</strong><br>在编程中，数据类型是一个重要的概念。<br>变量可以存储不同类型的数据，并且不同类型可以执行不同的操作。<br>在这些类别中，Python 默认拥有以下内置数据类型：</p>
 <table>
